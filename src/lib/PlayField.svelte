@@ -69,6 +69,5 @@
     display: flex;
     flex-direction: row;
     align-self: space-between;
-    border-radius: 15px;
   }
 </style>

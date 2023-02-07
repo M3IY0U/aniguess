@@ -123,4 +123,8 @@
     border-radius: 15px;
     padding: 0 15px;
   }
+
+  button:disabled {
+    border: 2px solid #2b2b2b;
+  }
 </style>
