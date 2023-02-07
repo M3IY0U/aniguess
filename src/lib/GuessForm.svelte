@@ -39,7 +39,7 @@
 
     document.getElementById(
       "guess-info"
-    ).innerHTML = `You lose, the right answer was: <a target="_blank" href="${$toGuess.siteUrl}">${$toGuess.title.english}</a>`;
+    ).innerHTML = `You lose, the correct answer was: <a target="_blank" href="${$toGuess.siteUrl}">${$toGuess.title.english}</a>`;
     gameEnd();
   }
 

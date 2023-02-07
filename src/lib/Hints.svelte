@@ -20,7 +20,7 @@
           hint.innerText = `Genres: ${$toGuess.genres}`;
           break;
         case 5:
-          hint.innerText = `Popular Character: ${$toGuess.mainCharacter}`;
+          hint.innerText = `Most popular character: ${$toGuess.mainCharacter}`;
           break;
         default:
           break;
@@ -65,7 +65,6 @@
   }
 
   :global(li) {
-    width: fit-content;
     font-size: 2em;
     margin: auto;
   }

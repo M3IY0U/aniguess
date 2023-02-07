@@ -1,9 +1,10 @@
 <script lang="ts">
-  import eightBit from "8bit";
   import { guessProgress, toGuess } from "./util/stores";
   import Hints from "./Hints.svelte";
   import { onMount } from "svelte";
 
+  const imgWidth = 450;
+  const imgHeight = 630;
   let canvas: HTMLCanvasElement;
   let image = new Image();
 
@@ -14,30 +15,44 @@
   onMount(() => {
     setTimeout(() => {
     guessProgress.subscribe((n) => {
-      eightBit(canvas, image, n * 2);
+      drawPixelImage(canvas, image, n * 2);
       if (n == 6) {
-        eightBit(canvas, image, 100);
+        drawPixelImage(canvas, image, 100);
       }
     });
-
-    eightBit(canvas, image, 1);
+    
+    image.src = $toGuess.coverImage;
+    drawPixelImage(canvas, image, 1);
   }, 100);
   });
+
+  function drawPixelImage (canvas, image, scale) {
+    scale *= 0.01;
+
+    var scaledW = imgWidth * scale;
+    var scaledH = imgHeight * scale;
+
+    var ctx = canvas.getContext('2d');
+
+    ctx.mozImageSmoothingEnabled = false;
+    ctx.webkitImageSmoothingEnabled = false;
+    ctx.imageSmoothingEnabled = false;
+
+    ctx.drawImage(image, 0, 0, scaledW, scaledH);
+    ctx.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
+  };
 
 </script>
 
 <div class="banner-container">
-  <canvas id="anime-image" width="450px" height="700px" bind:this={canvas} />
+  <canvas id="anime-image" width="{imgWidth}" height="{imgHeight}" bind:this={canvas} />
   <Hints />
 </div>
 
 <style>
   #anime-image {
     border-radius: 15px;
-    width: 450px;
-    height: 700px;
     align-self: center;
-    margin-right: 5px;
   }
 
   :global(.success) {
