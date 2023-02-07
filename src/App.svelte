@@ -31,7 +31,7 @@
     <AnimeCanvas />
     <Hints />
   </div>
-  <p id="guess-info" class="guesses">{guesses} Guesses remaining</p>
+  <p id="guess-info" class="guesses">{guesses} Guess{guesses > 1 ? "es" : ""} remaining</p>
   <GuessForm />
 </main>
 
