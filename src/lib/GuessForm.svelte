@@ -2,9 +2,6 @@
   import { entries, guessProgress, toGuess } from "./util/stores";
 
   let guess = "";
-  guessProgress.subscribe((n) => {
-    console.log(n);
-  });
 
   const skipClick = () => {
     guessProgress.update(function (n) {
@@ -20,7 +17,6 @@
   };
 
   function submitClick() {
-    console.log(guess);
     if (
       guess.toLowerCase() == $toGuess.title.english.toLowerCase() ||
       guess.toLowerCase() == $toGuess.title.romaji.toLowerCase()
@@ -64,6 +60,11 @@
         button.setAttribute("disabled", "");
       }
     );
+
+    // increse font size of guess info
+    document
+      .getElementById("guess-info")
+      .setAttribute("style", "font-size: 3em");
   }
 </script>
 

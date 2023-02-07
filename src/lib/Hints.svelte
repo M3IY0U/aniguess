@@ -20,7 +20,7 @@
           hint.innerText = `Genres: ${$toGuess.genres}`;
           break;
         case 5:
-          hint.innerText = `Main Character: ${$toGuess.mainCharacter}`;
+          hint.innerText = `Popular Character: ${$toGuess.mainCharacter}`;
           break;
         default:
           break;
@@ -31,7 +31,7 @@
 </script>
 
 <div id="hint-container" style="display:none">
-  <h3>Hints</h3>
+  <h2>Hints</h2>
 <ul id="hint-list"  />
 </div>
 <style>
@@ -40,23 +40,34 @@
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    width: 40vw;
-    margin: 10px 0px;
+    margin: 10px 10px;
   }
 
   #hint-list {
     align-self: center;
     justify-content: center;
-    width: 40vw;
-    margin: 10px 0px;
+    margin: 10px 15px;
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    margin: 0;
   }
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    white-space: nowrap;
   }
 
+  :global(li) {
+    width: fit-content;
+    font-size: 2em;
+    margin: auto;
+  }
 
 </style>
