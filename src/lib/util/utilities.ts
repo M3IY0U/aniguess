@@ -34,8 +34,3 @@ export function gameEnd() {
 
   document.getElementById("guess-info").setAttribute("style", "font-size: 3em");
 }
-
-    document
-      .getElementById("guess-info")
-      .setAttribute("style", "font-size: 3em");
-  }
