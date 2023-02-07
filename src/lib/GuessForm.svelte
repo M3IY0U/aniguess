@@ -1,17 +1,7 @@
 <script lang="ts">
   import { entries, guessProgress, pastGuesses, toGuess } from "./util/stores";
-
+  import { lose, win, gameEnd } from "./util/utilities";
   let guess = "";
-
-  const skipClick = () => {
-    pastGuesses.update((arr) => [...arr, "Skipped ⏩"]);
-    guessProgress.update(function (n) {
-      return Math.min(n + 1, 6);
-    });
-    if ($guessProgress == 6) {
-      lose();
-    }
-  };
 
   const enableHints = () => {
     document.getElementById("hint-container").setAttribute("style", "");
@@ -26,7 +16,10 @@
       guess.toLowerCase() == $toGuess.title.romaji.toLowerCase()
     ) {
       pastGuesses.update((arr) => [...arr, `${guess} ✅`]);
-      win();
+      while ($guessProgress < 6) {
+        guessProgress.update((n) => n + 1);
+      }
+      win($toGuess.siteUrl);
     } else {
       guessProgress.update(function (n) {
         return Math.min(n + 1, 6);
@@ -37,49 +30,20 @@
 
       guess = "";
       if ($guessProgress == 6) {
-        lose();
+        lose($toGuess.siteUrl, $toGuess.title.english);
       }
     }
   }
-
-  function lose() {
-    document.getElementById("anime-image").classList.add("failure");
-
-    document.getElementById(
-      "guess-info"
-    ).innerHTML = `You lose, the correct answer was: <a target="_blank" href="${$toGuess.siteUrl}">${$toGuess.title.english}</a>`;
-    document.getElementById("result-text").innerText = "💀";
-    document.getElementById("result-text").setAttribute("style", "opacity: 100%;");
-    gameEnd();
-  }
-
-  function win() {
-    while ($guessProgress < 6) {
-      guessProgress.update((n) => n + 1);
+  
+  const skipClick = () => {
+    pastGuesses.update((arr) => [...arr, "Skipped ⏩"]);
+    guessProgress.update(function (n) {
+      return Math.min(n + 1, 6);
+    });
+    if ($guessProgress == 6) {
+      lose($toGuess.siteUrl, $toGuess.title.english);
     }
-    document.getElementById("anime-image").classList.add("success");
-    document.getElementById(
-      "guess-info"
-    ).innerHTML = `Correct! Here it is <a target="_blank" href="${$toGuess.siteUrl}">on Anilist</a>`;
-    document.getElementById("result-text").innerText = "🎉";
-    document.getElementById("result-text").setAttribute("style", "opacity: 100%;");
-
-    gameEnd();
-  }
-
-  function gameEnd() {
-    [...document.getElementsByClassName("action-buttons")[0].children].forEach(
-      (button) => {
-        button.setAttribute("disabled", "");
-      }
-    );
-
-    document.getElementById("guess-input").setAttribute("disabled", "");
-
-    document
-      .getElementById("guess-info")
-      .setAttribute("style", "font-size: 3em");
-  }
+  };
 </script>
 
 <div class="guess-input-container">
