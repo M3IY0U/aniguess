@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { entries, guessProgress, toGuess } from "./util/stores";
+  import { entries, guessProgress, pastGuesses, toGuess } from "./util/stores";
 
   let guess = "";
 
   const skipClick = () => {
+    pastGuesses.update((arr) => [...arr, "Skipped ⏩"]);
     guessProgress.update(function (n) {
       return Math.min(n + 1, 6);
     });
@@ -14,6 +15,9 @@
 
   const enableHints = () => {
     document.getElementById("hint-container").setAttribute("style", "");
+    document
+      .getElementById("game-area")
+      .setAttribute("style", "grid-template-columns: 1fr 458px 1fr");
   };
 
   function submitClick() {
@@ -21,12 +25,16 @@
       guess.toLowerCase() == $toGuess.title.english.toLowerCase() ||
       guess.toLowerCase() == $toGuess.title.romaji.toLowerCase()
     ) {
+      pastGuesses.update((arr) => [...arr, `${guess} ✅`]);
       win();
     } else {
-      enableHints();
       guessProgress.update(function (n) {
         return Math.min(n + 1, 6);
       });
+      guess = guess.trim() == "" ? "Skipped ⏩" : `${guess} ❌`;
+
+      pastGuesses.update((arr) => [...arr, guess]);
+
       guess = "";
       if ($guessProgress == 6) {
         lose();
@@ -61,7 +69,8 @@
       }
     );
 
-    // increse font size of guess info
+    document.getElementById("guess-input").setAttribute("disabled", "");
+
     document
       .getElementById("guess-info")
       .setAttribute("style", "font-size: 3em");
@@ -69,13 +78,13 @@
 </script>
 
 <div class="guess-input-container">
-  <form on:submit|preventDefault={submitClick}>
+  <form on:submit|preventDefault={submitClick} on:submit|once={enableHints}>
     <input
+      id="guess-input"
       type="text"
       placeholder="Search for an anime"
       list="suggestions"
       bind:value={guess}
-      on:submit={submitClick}
     />
   </form>
   <datalist id="suggestions">
@@ -87,7 +96,11 @@
     {/each}
   </datalist>
   <div class="action-buttons">
-    <button class="submit-button" on:click={submitClick}>Submit</button>
+    <button
+      class="submit-button"
+      on:click|once={enableHints}
+      on:click={submitClick}>Submit</button
+    >
     <button class="skip-button" on:click|once={enableHints} on:click={skipClick}
       >Skip ⏩</button
     >
@@ -126,5 +139,11 @@
 
   button:disabled {
     border: 2px solid #2b2b2b;
+    cursor: not-allowed;
+  }
+
+  #guess-input:disabled {
+    border: 2px solid #2b2b2b;
+    cursor: not-allowed;
   }
 </style>

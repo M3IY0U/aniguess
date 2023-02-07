@@ -8,19 +8,19 @@
       var hint = document.createElement("li");
       switch (n) {
         case 1:
-          hint.innerText = `Average Score: ${$toGuess.averageScore}`;
+          hint.innerText = `💡 Average Score: ${$toGuess.averageScore}`;
           break;
         case 2:
-          hint.innerText = `Started in: ${$toGuess.startDate}`;
+          hint.innerText = `💡 Started in: ${$toGuess.startDate}`;
           break;
         case 3:
-          hint.innerText = `Main Studio: ${$toGuess.studios}`;
+          hint.innerText = `💡 Main Studio: ${$toGuess.studios}`;
           break;
         case 4:
-          hint.innerText = `Genres: ${$toGuess.genres}`;
+          hint.innerText = `💡 Genres: ${$toGuess.genres}`;
           break;
         case 5:
-          hint.innerText = `Most popular character: ${$toGuess.mainCharacter}`;
+          hint.innerText = `💡 Most popular character: ${$toGuess.mainCharacter}`;
           break;
         default:
           break;
@@ -31,42 +31,36 @@
 </script>
 
 <div id="hint-container" style="display:none">
-  <h2>Hints</h2>
-<ul id="hint-list"  />
+  <h3>Hints</h3>
+  <ul id="hint-list" />
 </div>
+
 <style>
   #hint-container {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
+    float: left;
     margin: 10px 10px;
+    white-space: nowrap;
+    width: 650px;
+    overflow-x: hidden;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin: 0;
+    text-align: start;
   }
 
   #hint-list {
-    align-self: center;
-    justify-content: center;
-    margin: 10px 15px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s ease-in-out;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 2.5em;
-    margin: 0;
-  }
-  ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    white-space: nowrap;
+    float: left;
+    text-align: start;
   }
 
-  :global(li) {
-    font-size: 2em;
-    margin: auto;
+  :global(#hint-list li) {
+    font-size: 1.5em;
+    margin: 5px 0;
+    padding: 0;
   }
-
 </style>

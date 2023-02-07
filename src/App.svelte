@@ -1,10 +1,12 @@
 <script lang="ts">
   import GuessForm from "./lib/GuessForm.svelte";
-  import PlayField from "./lib/PlayField.svelte";
   import data from "./assets/data.json";
   import { entries, guessProgress, toGuess } from "./lib/util/stores";
   import { Entry } from "./lib/util/Entry";
-  
+  import Hints from "./lib/Hints.svelte";
+  import PastGuesses from "./lib/PastGuesses.svelte";
+  import AnimeCanvas from "./lib/AnimeCanvas.svelte";
+
   entries.set(data.map((e) => new Entry(e)));
   toGuess.set($entries[Math.floor(Math.random() * $entries.length)]);
 
@@ -13,7 +15,6 @@
   guessProgress.subscribe((n) => {
     guesses = 6 - n;
   });
-
 </script>
 
 <header class="header">
@@ -25,11 +26,13 @@
 </header>
 
 <main class="main-container">
-  <div class="current-guess">
-    <PlayField />
-    <p id="guess-info" class="guesses">{guesses} Guesses remaining</p>
-    <GuessForm />
+  <div id="game-area">
+    <PastGuesses />
+    <AnimeCanvas />
+    <Hints />
   </div>
+  <p id="guess-info" class="guesses">{guesses} Guesses remaining</p>
+  <GuessForm />
 </main>
 
 <style>
@@ -40,9 +43,12 @@
     justify-content: center;
   }
 
-  .current-guess {
-    display: flex;
-    flex-direction: column;
+  #game-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1px;
+    margin: 0;
+    padding: 0;
   }
 
   p {
@@ -56,6 +62,9 @@
     width: 50vw;
     justify-content: center;
     align-items: center;
+    margin: 0 0;
+    padding: 0 0;
+    font-size: small;
   }
 
   /* button {

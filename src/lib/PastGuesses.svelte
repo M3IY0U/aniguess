@@ -1,0 +1,55 @@
+<script lang="ts">
+  import { pastGuesses } from "./util/stores";
+
+  let list: Array<string> = [];
+
+  pastGuesses.subscribe((guesses) => {
+    console.log(guesses);
+    list = [];
+
+    guesses.forEach((guess) => {
+      list.push(guess);
+    });
+  });
+</script>
+
+{#if $pastGuesses.length > 0}
+  <div id="guesses-container">
+    <h3>Guesses</h3>
+    <ul id="past-guesses">
+      {#each list as guess}
+        <li>{guess}</li>
+      {/each}
+    </ul>
+  </div>
+{/if}
+
+<style>
+  #guesses-container {
+    float: right;
+    margin: 10px 10px;
+    white-space: nowrap;
+    width: 650px;
+    overflow-x: hidden;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin: 0;
+    text-align: end;
+  }
+
+  #past-guesses {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    text-align: end;
+  }
+
+  :global(#past-guesses li) {
+    font-size: 1.5em;
+    margin: 5px 0;
+    padding: 0;
+  }
+</style>
