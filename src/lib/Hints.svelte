@@ -40,7 +40,6 @@
   #hint-container {
     float: left;
     margin: 10px 10px;
-    white-space: nowrap;
     width: 650px;
     overflow-x: hidden;
   }
@@ -60,12 +59,12 @@
   }
 
   :global(#hint-list li) {
-    width: 430px;
+    max-width: 430px;
     overflow-x: hidden;
     font-size: 1.5em;
     margin: 5px 0;
     padding: 10px;
-    border: 2px solid rgb(127, 127, 127);
+    border: 2px solid #707070;
     border-radius: 5px;
   }
 </style>
