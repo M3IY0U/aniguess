@@ -48,6 +48,8 @@
     document.getElementById(
       "guess-info"
     ).innerHTML = `You lose, the correct answer was: <a target="_blank" href="${$toGuess.siteUrl}">${$toGuess.title.english}</a>`;
+    document.getElementById("result-text").innerText = "💀";
+    document.getElementById("result-text").setAttribute("style", "opacity: 100%;");
     gameEnd();
   }
 
@@ -59,6 +61,9 @@
     document.getElementById(
       "guess-info"
     ).innerHTML = `Correct! Here it is <a target="_blank" href="${$toGuess.siteUrl}">on Anilist</a>`;
+    document.getElementById("result-text").innerText = "🎉";
+    document.getElementById("result-text").setAttribute("style", "opacity: 100%;");
+
     gameEnd();
   }
 

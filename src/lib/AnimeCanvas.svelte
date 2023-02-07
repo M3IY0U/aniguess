@@ -48,9 +48,26 @@
     height={imgHeight}
     bind:this={canvas}
   />
+  <div id="result-text" style="opacity: 0%;">🎉</div>
 </div>
 
 <style>
+  #result-text {
+    pointer-events: none;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    top: 20%;
+    display: block;
+    font-size: 15em;
+    margin: 0;
+    text-align: center;
+    transition: opacity 0.4s ease-in-out;
+  }
+
   #anime-image {
     border-radius: 15px;
     align-self: center;
