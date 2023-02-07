@@ -50,6 +50,8 @@
   :global(#past-guesses li) {
     font-size: 1.5em;
     margin: 5px 0;
-    padding: 0;
+    padding: 10px;
+    border: 2px solid rgb(127, 127, 127);
+    border-radius: 5px;
   }
 </style>

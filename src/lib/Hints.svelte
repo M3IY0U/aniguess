@@ -20,11 +20,12 @@
           hint.innerText = `💡 Genres: ${$toGuess.genres}`;
           break;
         case 5:
-          hint.innerText = `💡 Most popular character: ${$toGuess.mainCharacter}`;
+          hint.innerText = `💡 Popular Character: ${$toGuess.mainCharacter}`;
           break;
         default:
-          break;
+          return;
       }
+      hint.title = hint.innerText;
       document.getElementById("hint-list").appendChild(hint);
     });
   });
@@ -59,8 +60,12 @@
   }
 
   :global(#hint-list li) {
+    width: 430px;
+    overflow-x: hidden;
     font-size: 1.5em;
     margin: 5px 0;
-    padding: 0;
+    padding: 10px;
+    border: 2px solid rgb(127, 127, 127);
+    border-radius: 5px;
   }
 </style>
