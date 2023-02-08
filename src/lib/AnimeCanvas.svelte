@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { guessProgress, toGuess } from "./util/stores";
+  import { guessProgress, toGuess, entries } from "./util/stores";
   import { onMount } from "svelte";
 
   const imgWidth = 450;
@@ -8,30 +8,29 @@
   let image = new Image();
 
   toGuess.subscribe((e) => {
+    if(e == null) return;
+     
     image.src = e.coverImage;
   });
 
   onMount(() => {
-    setTimeout(() => {
+     setTimeout(() => {
       guessProgress.subscribe((n) => {
-        drawPixelImage(canvas, image, n * 2);
-        if (n == 6) {
+        drawPixelImage(canvas, image, n);
+        if (n >= 6) {
           drawPixelImage(canvas, image, 100);
         }
       });
-
-      drawPixelImage(canvas, image, 1);
     }, 100);
   });
 
   function drawPixelImage(canvas, image, scale) {
-    scale *= 0.01;
+    scale = [90, 45, 30, 18, 15, 6, 1][scale];
 
-    var scaledW = imgWidth * scale;
-    var scaledH = imgHeight * scale;
+    var scaledW = imgWidth / scale;
+    var scaledH = imgHeight / scale;
 
     var ctx = canvas.getContext("2d");
-
     ctx.mozImageSmoothingEnabled = false;
     ctx.webkitImageSmoothingEnabled = false;
     ctx.imageSmoothingEnabled = false;

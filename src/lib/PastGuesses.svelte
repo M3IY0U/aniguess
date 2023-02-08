@@ -4,7 +4,6 @@
   let list: Array<string> = [];
 
   pastGuesses.subscribe((guesses) => {
-    console.log(guesses);
     list = [];
 
     guesses.forEach((guess) => {

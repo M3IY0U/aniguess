@@ -1,14 +1,7 @@
 <script lang="ts">
   import { entries, guessProgress, pastGuesses, toGuess } from "./util/stores";
-  import { lose, win, gameEnd } from "./util/utilities";
+  import { lose, win, enableHints, disableHints } from "./util/utilities";
   let guess = "";
-
-  const enableHints = () => {
-    document.getElementById("hint-container").setAttribute("style", "");
-    document
-      .getElementById("game-area")
-      .setAttribute("style", "grid-template-columns: 1fr 458px 1fr");
-  };
 
   function submitClick() {
     if (
@@ -34,7 +27,7 @@
       }
     }
   }
-  
+
   const skipClick = () => {
     pastGuesses.update((arr) => [...arr, "Skipped ⏩"]);
     guessProgress.update(function (n) {
@@ -73,10 +66,16 @@
     <button class="skip-button" on:click|once={enableHints} on:click={skipClick}
       >Skip ⏩</button
     >
+    <button id="retry-button" style="display: none;" on:click={() => window.location.reload()}
+      >Retry</button
+    >
   </div>
 </div>
 
 <style>
+  #retry-button {
+    width: 170px;
+  }
   .guess-input-container {
     width: 450px;
     margin-top: 15px;
