@@ -5,11 +5,12 @@
   const imgWidth = 450;
   const imgHeight = 630;
   let canvas: HTMLCanvasElement;
-  let image = new Image();
+  let image: HTMLImageElement;
 
   toGuess.subscribe((e) => {
     if(e == null) return;
      
+    image = new Image();
     image.src = e.coverImage;
   });
 
