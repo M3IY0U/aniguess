@@ -1,7 +1,7 @@
 <script lang="ts">
   import GuessForm from "./lib/GuessForm.svelte";
   import data from "./assets/data.json";
-  import { entries, guessProgress, toGuess } from "./lib/util/stores";
+  import { entries, gameState, guessProgress, toGuess } from "./lib/util/stores";
   import { Entry } from "./lib/util/Entry";
   import Hints from "./lib/Hints.svelte";
   import PastGuesses from "./lib/PastGuesses.svelte";
@@ -26,7 +26,7 @@
 </header>
 
 <main class="main-container">
-  <div id="game-area">
+  <div id="game-area" style="grid-template-columns: {$gameState == 'idle' ? '1fr' : '1fr 458px 1fr'}">
     <PastGuesses />
     <AnimeCanvas />
     <Hints />

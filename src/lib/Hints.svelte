@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import { guessProgress, toGuess } from "./util/stores";
+  import { onMount, tick } from "svelte";
+  import { gameState, guessProgress, pastGuesses, toGuess } from "./util/stores";
 
-  onMount(() => {
-    guessProgress.subscribe((n) => {
+  onMount( () => {
+    guessProgress.subscribe(async (n) => {
       if (n < 1) return;
       var hint = document.createElement("li");
       switch (n) {
@@ -26,15 +26,18 @@
           return;
       }
       hint.title = hint.innerText;
+      await tick();
       document.getElementById("hint-list").appendChild(hint);
     });
   });
 </script>
 
-<div id="hint-container" style="display:none">
+{#if $gameState != "idle" }
+<div id="hint-container">
   <h3>Hints</h3>
   <ul id="hint-list" />
 </div>
+{/if}
 
 <style>
   #hint-container {

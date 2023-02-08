@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { pastGuesses } from "./util/stores";
+  import { gameState, pastGuesses } from "./util/stores";
 
   let list: Array<string> = [];
 
@@ -12,10 +12,10 @@
   });
 </script>
 
-{#if $pastGuesses.length > 0}
+{#if $gameState != "idle" }
   <div id="guesses-container">
     <h3>Guesses</h3>
-    <ul id="past-guesses">
+    <ul id="past-guesses" >
       {#each list as guess}
         <li>{guess}</li>
       {/each}

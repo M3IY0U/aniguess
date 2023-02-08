@@ -24,33 +24,29 @@ export function win(url: string) {
 }
 
 export function gameEnd() {
-  [...document.getElementsByClassName("action-buttons")[0].children].forEach(
-    (button) => {
-      button.setAttribute("style", "display: none");
-    }
-  );
-
   setTimeout(() => {
     document
       .getElementById("result-text")
       .setAttribute("style", "opacity: 0%;");
   }, 1000);
 
-  document.getElementById("retry-button").setAttribute("style", "");
-  document.getElementById("guess-input").setAttribute("disabled", "");
   document.getElementById("guess-info").setAttribute("style", "font-size: 3em");
 }
 
-export const enableHints = () => {
-  document.getElementById("hint-container").setAttribute("style", "");
-  document
-    .getElementById("game-area")
-    .setAttribute("style", "grid-template-columns: 1fr 458px 1fr");
-};
+export const imgWidth = 450;
+export const imgHeight = 630;
 
-export const disableHints = () => {
-  document.getElementById("hint-container").setAttribute("style", "display: none");
-  document
-    .getElementById("game-area")
-    .setAttribute("style", "grid-template-columns: 1fr");
-};
+export function drawPixelImage(canvas, image, scale) {
+  scale = [90, 45, 30, 18, 15, 6, 1][scale];
+
+  var scaledW = imgWidth / scale;
+  var scaledH = imgHeight / scale;
+
+  var ctx = canvas.getContext("2d");
+  ctx.mozImageSmoothingEnabled = false;
+  ctx.webkitImageSmoothingEnabled = false;
+  ctx.imageSmoothingEnabled = false;
+
+  ctx.drawImage(image, 0, 0, scaledW, scaledH);
+  ctx.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
+}

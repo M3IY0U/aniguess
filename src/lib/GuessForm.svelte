@@ -1,7 +1,19 @@
 <script lang="ts">
-  import { entries, guessProgress, pastGuesses, toGuess } from "./util/stores";
-  import { lose, win, enableHints, disableHints } from "./util/utilities";
+  import {
+    entries,
+    gameState,
+    guessProgress,
+    pastGuesses,
+    toGuess,
+  } from "./util/stores";
+  import { lose, win } from "./util/utilities";
+
   let guess = "";
+
+  function startGame() {
+    if ($gameState == "running") return;
+    gameState.set("running");
+  }
 
   function submitClick() {
     if (
@@ -13,6 +25,7 @@
         guessProgress.update((n) => n + 1);
       }
       win($toGuess.siteUrl);
+      gameState.set("win");
     } else {
       guessProgress.update(function (n) {
         return Math.min(n + 1, 6);
@@ -24,6 +37,7 @@
       guess = "";
       if ($guessProgress == 6) {
         lose($toGuess.siteUrl, $toGuess.title.english);
+        gameState.set("loss");
       }
     }
   }
@@ -35,18 +49,20 @@
     });
     if ($guessProgress == 6) {
       lose($toGuess.siteUrl, $toGuess.title.english);
+      gameState.set("loss");
     }
   };
 </script>
 
 <div class="guess-input-container">
-  <form on:submit|preventDefault={submitClick} on:submit|once={enableHints}>
+  <form on:submit|preventDefault={submitClick} on:submit|once={startGame}>
     <input
       id="guess-input"
       type="text"
       placeholder="Search for an anime"
       list="suggestions"
       bind:value={guess}
+      disabled={$gameState == "win" || $gameState == "loss"}
     />
   </form>
   <datalist id="suggestions">
@@ -58,17 +74,20 @@
     {/each}
   </datalist>
   <div class="action-buttons">
-    <button
-      class="submit-button"
-      on:click|once={enableHints}
-      on:click={submitClick}>Submit</button
-    >
-    <button class="skip-button" on:click|once={enableHints} on:click={skipClick}
-      >Skip ⏩</button
-    >
-    <button id="retry-button" style="display: none;" on:click={() => window.location.reload()}
-      >Retry</button
-    >
+    {#if $gameState == "win" || $gameState == "loss"}
+      <button id="retry-button" on:click={() => window.location.reload()}
+        >Retry</button
+      >
+    {:else}
+      <button
+        class="submit-button"
+        on:click|once={startGame}
+        on:click={submitClick}>Submit</button
+      >
+      <button class="skip-button" on:click|once={startGame} on:click={skipClick}
+        >Skip ⏩</button
+      >
+    {/if}
   </div>
 </div>
 
