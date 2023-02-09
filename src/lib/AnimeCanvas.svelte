@@ -26,7 +26,7 @@
           drawPixelImage(canvas, image, 100);
         }
       });
-    }, 100);
+    }, 200);
 
     gameState.subscribe((s) => {
       if (s == "win") {

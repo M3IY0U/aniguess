@@ -17964,5 +17964,5369 @@
     "startDate": {
       "year": 2019
     }
+  },
+  {
+    "title": {
+      "romaji": "Kimi no Na wa.",
+      "english": "Your Name."
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21519-XIr3PeczUjjF.png"
+    },
+    "siteUrl": "https://anilist.co/anime/21519",
+    "genres": ["Drama", "Romance", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 86,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Mitsuha Miyamizu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "Koe no Katachi",
+      "english": "A Silent Voice"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20954-UMb6Kl7ZL8Ke.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/20954",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 88,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shouko Nishimiya"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kimetsu no Yaiba: Mugen Ressha-hen",
+      "english": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112151-1qlQwPB1RrJe.png"
+    },
+    "siteUrl": "https://anilist.co/anime/112151",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 85,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Tanjirou Kamado"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Sen to Chihiro no Kamikakushi",
+      "english": "Spirited Away"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx199-ehguwq1mPvtN.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/199",
+    "genres": ["Adventure", "Drama", "Fantasy", "Romance", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 86,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Haku"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2001
+    }
+  },
+  {
+    "title": {
+      "romaji": "Tenki no Ko",
+      "english": "Weathering With You"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106286-5COcpd0J9VbL.png"
+    },
+    "siteUrl": "https://anilist.co/anime/106286",
+    "genres": ["Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Hina Amano"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kimi no Suizou wo Tabetai",
+      "english": "I Want to Eat Your Pancreas"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99750-NHafozHS8zRp.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/99750",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio VOLN"
+          }
+        }
+      ]
+    },
+    "averageScore": 84,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Sakura Yamauchi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Howl no Ugoku Shiro",
+      "english": "Howl‘s Moving Castle"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx431-dDgk19xDZjVX.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/431",
+    "genres": ["Adventure", "Drama", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 84,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Howl"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2004
+    }
+  },
+  {
+    "title": {
+      "romaji": "Mononoke-hime",
+      "english": "Princess Mononoke"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx164-QYmGmG2k09pL.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/164",
+    "genres": ["Action", "Adventure", "Drama", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 84,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "San"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1997
+    }
+  },
+  {
+    "title": {
+      "romaji": "Jujutsu Kaisen 0",
+      "english": "JUJUTSU KAISEN 0"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131573-rpl82vDEDRm6.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/131573",
+    "genres": ["Action", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MAPPA"
+          }
+        }
+      ]
+    },
+    "averageScore": 85,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Yuuta Okkotsu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2021
+    }
+  },
+  {
+    "title": {
+      "romaji": "Tonari no Totoro",
+      "english": "My Neighbor Totoro"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx523-gOsP34LWBXTn.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/523",
+    "genres": ["Adventure", "Fantasy", "Slice of Life", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Totoro"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1988
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kotonoha no Niwa",
+      "english": "The Garden of Words"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16782-1AekGIzlPy8a.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/16782",
+    "genres": ["Drama", "Psychological", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 76,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Yukari Yukino"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Byousoku 5 Centimeter",
+      "english": "5 Centimeters per Second"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1689-hlkAI78WBahK.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/1689",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 72,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Takaki Tohno"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2007
+    }
+  },
+  {
+    "title": {
+      "romaji": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+      "english": "Rascal Does Not Dream of a Dreaming Girl"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104157-rk99XI56PaIC.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/104157",
+    "genres": ["Drama", "Psychological", "Romance", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CloverWorks"
+          }
+        }
+      ]
+    },
+    "averageScore": 84,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Mai Sakurajima"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "No Game No Life Zero",
+      "english": "No Game, No Life Zero"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21875-ybSgx75MgRMM.png"
+    },
+    "siteUrl": "https://anilist.co/anime/21875",
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Schwi Dola"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Boku no Hero Academia THE MOVIE: Futari no Hero",
+      "english": "My Hero Academia: Two Heroes"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100723-7f5e1BCTCDoB.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/100723",
+    "genres": ["Action", "Comedy", "Drama", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        }
+      ]
+    },
+    "averageScore": 74,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Izuku Midoriya"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Shin Seiki Evangelion Movie: Air / Magokoro wo, Kimi ni",
+      "english": "Neon Genesis Evangelion: The End of Evangelion"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx32-i4ijZI4MuPiV.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/32",
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Gainax"
+          }
+        },
+        {
+          "node": {
+            "name": "Production I.G"
+          }
+        }
+      ]
+    },
+    "averageScore": 85,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Asuka Langley Souryuu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1997
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kono Subarashii Sekai ni Shukufuku wo! Kurenai Densetsu",
+      "english": "KONOSUBA -God's blessing on this wonderful world!- Legend of Crimson"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx102976-WcNjDFdQbdCv.png"
+    },
+    "siteUrl": "https://anilist.co/anime/102976",
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "J.C. Staff"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Megumin"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "AKIRA",
+      "english": "Akira"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-Sjkc8RDBjqwT.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/47",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Horror",
+      "Psychological",
+      "Sci-Fi",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Tokyo Movie Shinsha"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shoutarou Kaneda"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1988
+    }
+  },
+  {
+    "title": {
+      "romaji": "Hotarubi no Mori e",
+      "english": "Into the Forest of Fireflies' Light"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10408-PlKJ6DAyvMk2.png"
+    },
+    "siteUrl": "https://anilist.co/anime/10408",
+    "genres": ["Drama", "Fantasy", "Romance", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Brain's Base"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Gin"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2011
+    }
+  },
+  {
+    "title": {
+      "romaji": "PERFECT BLUE",
+      "english": "Perfect Blue"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx437-dvq9hcIyojVX.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/437",
+    "genres": ["Drama", "Horror", "Psychological", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 85,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Mima Kirigoe"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1998
+    }
+  },
+  {
+    "title": {
+      "romaji": "Ookami Kodomo no Ame to Yuki",
+      "english": "Wolf Children"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12355-wNsvhEsXEgrH.png"
+    },
+    "siteUrl": "https://anilist.co/anime/12355",
+    "genres": ["Drama", "Fantasy", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        },
+        {
+          "node": {
+            "name": "Studio Chizu"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Hana"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "Sword Art Online: Ordinal Scale",
+      "english": "Sword Art Online the Movie: Ordinal Scale"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21403-k8DZhZ3x1BCO.png"
+    },
+    "siteUrl": "https://anilist.co/anime/21403",
+    "genres": ["Action", "Adventure", "Fantasy", "Romance", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 73,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Asuna Yuuki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Toki wo Kakeru Shoujo",
+      "english": "The Girl Who Leapt Through Time"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2236-SZf9JYAQ3pyc.png"
+    },
+    "siteUrl": "https://anilist.co/anime/2236",
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Chiaki Mamiya"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2006
+    }
+  },
+  {
+    "title": {
+      "romaji": "Hotaru no Haka",
+      "english": "Grave of the Fireflies"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/578",
+    "genres": ["Drama"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Setsuko"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1988
+    }
+  },
+  {
+    "title": {
+      "romaji": "Boku no Hero Academia THE MOVIE: Heroes:Rising",
+      "english": "My Hero Academia: Heroes Rising"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108553-yOLfFogpWnTF.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/108553",
+    "genres": ["Action", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Katsuki Bakugou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Nakitai Watashi wa Neko wo Kaburu",
+      "english": "A Whisker Away"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114963-QWMbi5ttovSK.png"
+    },
+    "siteUrl": "https://anilist.co/anime/114963",
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Colorido"
+          }
+        }
+      ]
+    },
+    "averageScore": 73,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Miyo Sasaki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Violet Evergarden Movie",
+      "english": "Violet Evergarden: the Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103047-LYIbLtN2Rb5T.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/103047",
+    "genres": ["Drama", "Fantasy", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 88,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Violet Evergarden"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kizumonogatari I: Tekketsu-hen",
+      "english": "Kizumonogatari Part 1: Tekketsu"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9260-tbZARfVq8JoX.png"
+    },
+    "siteUrl": "https://anilist.co/anime/9260",
+    "genres": [
+      "Action",
+      "Drama",
+      "Ecchi",
+      "Mystery",
+      "Psychological",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Shaft"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shinobu Oshino"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "Majo no Takkyuubin",
+      "english": "Kiki's Delivery Service"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx512-cHbcJH0bT0iY.png"
+    },
+    "siteUrl": "https://anilist.co/anime/512",
+    "genres": ["Adventure", "Comedy", "Drama", "Fantasy", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kiki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1989
+    }
+  },
+  {
+    "title": {
+      "romaji": "Gake no Ue no Ponyo",
+      "english": "Ponyo"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2890-wcNtFr6aUYOR.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/2890",
+    "genres": ["Adventure", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Ponyo"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2008
+    }
+  },
+  {
+    "title": {
+      "romaji": "Suzumiya Haruhi no Shoushitsu",
+      "english": "The Disappearance of Haruhi Suzumiya"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7311-2Qu6rQgl7Aqi.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/7311",
+    "genres": ["Drama", "Mystery", "Sci-Fi", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 86,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kyon"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2010
+    }
+  },
+  {
+    "title": {
+      "romaji": "GHOST IN THE SHELL: Koukaku Kidoutai",
+      "english": "Ghost in the Shell"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx43-LMGXobx4D6in.png"
+    },
+    "siteUrl": "https://anilist.co/anime/43",
+    "genres": ["Action", "Psychological", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Production I.G"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Motoko Kusanagi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1995
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kizumonogatari III: Reiketsu-hen",
+      "english": "Kizumonogatari Part 3: Reiketsu"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21400-1OpNcuEs7osA.png"
+    },
+    "siteUrl": "https://anilist.co/anime/21400",
+    "genres": [
+      "Action",
+      "Drama",
+      "Ecchi",
+      "Mystery",
+      "Psychological",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Shaft"
+          }
+        }
+      ]
+    },
+    "averageScore": 87,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shinobu Oshino"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kizumonogatari II: Nekketsu-hen",
+      "english": "Kizumonogatari Part 2: Nekketsu"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21399-VTAdAqc8u5AE.png"
+    },
+    "siteUrl": "https://anilist.co/anime/21399",
+    "genres": [
+      "Action",
+      "Drama",
+      "Ecchi",
+      "Mystery",
+      "Psychological",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Shaft"
+          }
+        }
+      ]
+    },
+    "averageScore": 85,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shinobu Oshino"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "Made in Abyss: Fukaki Tamashii no Reimei",
+      "english": "Made in Abyss: Dawn of the Deep Soul"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100643-fPH9OgEKKvcI.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/100643",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Mystery",
+      "Psychological",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kinema Citrus"
+          }
+        }
+      ]
+    },
+    "averageScore": 86,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Nanachi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Steins;Gate: Fuka Ryouiki no Déjà vu",
+      "english": "Steins;Gate The Movie – Load Region of Déjà Vu"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11577-rhqsxLOAge4f.png"
+    },
+    "siteUrl": "https://anilist.co/anime/11577",
+    "genres": ["Drama", "Romance", "Sci-Fi", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "White Fox"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kurisu Makise"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Fate/stay night [Heaven's Feel] I. presage flower",
+      "english": "Fate/stay night [Heaven's Feel] I. presage flower"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20791-6Ktwmvm5v2Wf.png"
+    },
+    "siteUrl": "https://anilist.co/anime/20791",
+    "genres": ["Action", "Fantasy", "Psychological", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Sakura Matou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Evangelion Shin Movie: Jo",
+      "english": "Evangelion: 1.0 You Are (Not) Alone"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2759-z07kq8Pnw5B1.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/2759",
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Khara"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Misato Katsuragi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2007
+    }
+  },
+  {
+    "title": {
+      "romaji": "Josee to Tora to Sakanatachi",
+      "english": "Josee, the Tiger and the Fish"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113596-LKA0bYJGjLnB.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/113596",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Josee"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "THE LAST: NARUTO THE MOVIE",
+      "english": "The Last: Naruto the Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16870-Wg0XQKHcwV1r.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/16870",
+    "genres": ["Action", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 76,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kakashi Hatake"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2014
+    }
+  },
+  {
+    "title": {
+      "romaji": "Paprika",
+      "english": "Paprika"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1943-YyEsHWhYKukN.png"
+    },
+    "siteUrl": "https://anilist.co/anime/1943",
+    "genres": ["Fantasy", "Mystery", "Psychological", "Sci-Fi", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Paprika"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2006
+    }
+  },
+  {
+    "title": {
+      "romaji": "Sayonara no Asa ni Yakusoku no Hana wo Kazarou",
+      "english": "Maquia: When the Promised Flower Blooms"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99457-PFq5dreQabIu.png"
+    },
+    "siteUrl": "https://anilist.co/anime/99457",
+    "genres": ["Drama", "Fantasy", "Psychological"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "P.A. Works"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Maquia"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Evangelion Shin Movie: Ha",
+      "english": "Evangelion: 2.0 You Can (Not) Advance"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3784-TGCsqLryKJ2R.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/3784",
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Khara"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Asuka Langley Souryuu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2009
+    }
+  },
+  {
+    "title": {
+      "romaji": "Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou",
+      "english": "Violet Evergarden: Eternity and the Auto Memory Doll"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109190-e8mv1qdmpjLW.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/109190",
+    "genres": ["Drama", "Fantasy", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Violet Evergarden"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Fate/stay night [Heaven's Feel] II. lost butterfly",
+      "english": "Fate/stay night [Heaven's Feel] II. lost butterfly"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21718-Hjj26Sapx1bd.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21718",
+    "genres": ["Action", "Fantasy", "Psychological", "Romance", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 84,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Sakura Matou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Tenkuu no Shiro Laputa",
+      "english": "Castle in the Sky"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx513-G47zqEhndFBY.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/513",
+    "genres": ["Adventure", "Fantasy", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Pazu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1986
+    }
+  },
+  {
+    "title": {
+      "romaji": "Summer Wars",
+      "english": "Summer Wars"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5681-3DmxUVn3grD0.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/5681",
+    "genres": ["Action", "Comedy", "Drama", "Romance", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kazuma Ikezawa"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2009
+    }
+  },
+  {
+    "title": {
+      "romaji": "Evangelion Shin Movie: Kyuu",
+      "english": "Evangelion: 3.0 You Can (Not) Redo"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3785-OG857YhQalvS.png"
+    },
+    "siteUrl": "https://anilist.co/anime/3785",
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Khara"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shinji Ikari"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "Tamako Love Story",
+      "english": "Tamako -love story-"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20519-YdNUizVJJIWI.png"
+    },
+    "siteUrl": "https://anilist.co/anime/20519",
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Tamako Kitashirakawa"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2014
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kara no Kyoukai: Fukan Fuukei",
+      "english": "the Garden of sinners Chapter 1: Thanatos. (Overlooking View)"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2593-irF8xIuAOKUc.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/2593",
+    "genres": ["Action", "Mystery", "Supernatural", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 73,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shiki Ryougi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2007
+    }
+  },
+  {
+    "title": {
+      "romaji": "Bakemono no Ko",
+      "english": "The Boy and The Beast"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20981-D6PAJAOC4jPc.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/20981",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Chizu"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kumatetsu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "Mahou Shoujo Madoka☆Magica: Hangyaku no Monogatari",
+      "english": "Puella Magi Madoka Magica the Movie Part III: Rebellion"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx11981-aiVnvftA1xPC.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/11981",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Mahou Shoujo",
+      "Mystery",
+      "Psychological",
+      "Thriller"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Shaft"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Homura Akemi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Promare",
+      "english": "Promare"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99425-6xPtmOpBnlLY.png"
+    },
+    "siteUrl": "https://anilist.co/anime/99425",
+    "genres": ["Action", "Mecha", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Trigger"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Lio Fotia"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Little Witch Academia",
+      "english": "Little Witch Academia"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14349-zvSfbgjZr4LW.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/14349",
+    "genres": ["Comedy", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Trigger"
+          }
+        }
+      ]
+    },
+    "averageScore": 76,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Atsuko Kagari"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Dragon Ball Super: Broly",
+      "english": "Dragon Ball Super: Broly"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101302-7L0lcwYeFQQM.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/101302",
+    "genres": ["Action", "Adventure"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Toei Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Gokuu Son"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Fate/stay night [Heaven's Feel] III. spring song",
+      "english": "Fate/stay night [Heaven’s Feel] III. spring song"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21719-PKVm9R01Fu1k.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21719",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Psychological",
+      "Supernatural",
+      "Thriller"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 86,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Sakura Matou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Given Movie",
+      "english": "Given The Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111734-82sWJBotlzE8.png"
+    },
+    "siteUrl": "https://anilist.co/anime/111734",
+    "genres": ["Drama", "Music", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Lerche"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Haruki Nakayama"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Shin Evangelion Movie:||",
+      "english": "Evangelion: 3.0+1.0 Thrice Upon a Time"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3786-FPo09WTuoTCV.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/3786",
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Khara"
+          }
+        }
+      ]
+    },
+    "averageScore": 86,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Asuka Langley Souryuu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2021
+    }
+  },
+  {
+    "title": {
+      "romaji": "BORUTO: NARUTO THE MOVIE",
+      "english": "Boruto: Naruto the Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21220-3cWAUtR1Ih5h.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21220",
+    "genres": ["Action", "Adventure", "Comedy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 71,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Naruto Uzumaki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "REDLINE",
+      "english": "Redline"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6675-fFFoRB7FqNau.png"
+    },
+    "siteUrl": "https://anilist.co/anime/6675",
+    "genres": ["Action", "Romance", "Sci-Fi", "Sports"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "JP"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2009
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kokoro ga Sakebitagatterun da.",
+      "english": "The Anthem of the Heart"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20968-0zFVsoFUYjeh.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/20968",
+    "genres": ["Drama", "Music", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 76,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Jun Naruse"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "Nanatsu no Taizai Movie: Tenkuu no Torawarebito",
+      "english": "The Seven Deadly Sins the Movie: Prisoners of the Sky"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx99540-QnY48c1oifvY.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/99540",
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 69,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Ban"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Mimi wo Sumaseba",
+      "english": "Whisper of the Heart"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx585-5uq7j2xNNVmN.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/585",
+    "genres": ["Adventure", "Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Seiji Amasawa"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1995
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kaze no Tani no Nausicaä",
+      "english": "Nausicaä of the Valley of the Wind"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx572-ZE3kHBA6U0X1.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/572",
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Topcraft"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Nausicaä"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1984
+    }
+  },
+  {
+    "title": {
+      "romaji": "Karigurashi no Arrietty",
+      "english": "The Secret World of Arrietty"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7711-IDDzqp6d3tQz.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/7711",
+    "genres": ["Adventure", "Drama", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Arrietty"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2010
+    }
+  },
+  {
+    "title": {
+      "romaji": "Code Geass: Fukkatsu no Lelouch",
+      "english": "Code Geass: Lelouch of the Re;surrection"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97880-sZWHViJfrvXm.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/97880",
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha",
+      "Psychological",
+      "Sci-Fi",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Sunrise"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Lelouch Lamperouge"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kaze Tachinu",
+      "english": "The Wind Rises"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16662-6rqh55mNFY3n.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/16662",
+    "genres": ["Drama", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Jirou Horikoshi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kimi to, Nami ni Noretara",
+      "english": "Ride Your Wave"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105018-XM7rFyryltjb.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/105018",
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Science SARU"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Minato Hinageshi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "K-ON! Movie",
+      "english": "K-ON!: The Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9617-2As22UxowVfV.png"
+    },
+    "siteUrl": "https://anilist.co/anime/9617",
+    "genres": ["Comedy", "Music", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Mio Akiyama"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2011
+    }
+  },
+  {
+    "title": {
+      "romaji": "Boku no Hero Academia THE MOVIE: World Heroes' Mission",
+      "english": "My Hero Academia: World Heroes' Mission"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126659-i6c1PsXHGyke.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/126659",
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shouto Todoroki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2021
+    }
+  },
+  {
+    "title": {
+      "romaji": "Cider no You ni Kotoba ga Wakiagaru",
+      "english": "Words Bubble Up Like Soda Pop"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107625-2UIAI4TRwXz0.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/107625",
+    "genres": ["Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Signal.MD"
+          }
+        },
+        {
+          "node": {
+            "name": "Sublimation"
+          }
+        }
+      ]
+    },
+    "averageScore": 74,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Cherry"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2021
+    }
+  },
+  {
+    "title": {
+      "romaji": "Sword Art Online: Progressive - Hoshinaki Yoru no Aria",
+      "english": "Sword Art Online the Movie -Progressive- Aria of a Starless Night"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx124140-HNL0CpH6ig6y.png"
+    },
+    "siteUrl": "https://anilist.co/anime/124140",
+    "genres": ["Action", "Adventure", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Asuna Yuuki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2021
+    }
+  },
+  {
+    "title": {
+      "romaji": "HELLO WORLD",
+      "english": "HELLO WORLD"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106240-XeWQ4YhKzv7h.png"
+    },
+    "siteUrl": "https://anilist.co/anime/106240",
+    "genres": ["Drama", "Psychological", "Romance", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Graphinica"
+          }
+        }
+      ]
+    },
+    "averageScore": 73,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Ruri Ichigyou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Doukyuusei",
+      "english": "Doukyuusei -Classmates-"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21096-1wIOxpjtXb7J.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21096",
+    "genres": ["Drama", "Music", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Hikaru Kusakabe"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "Bungou Stray Dogs: DEAD APPLE",
+      "english": "Bungo Stray Dogs: DEAD APPLE"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98384-nXEnNzwiJ9BV.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/98384",
+    "genres": ["Action", "Comedy", "Mystery", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Osamu Dazai"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Goblin Slayer: GOBLIN'S CROWN",
+      "english": "GOBLIN SLAYER -GOBLIN’S CROWN-"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108623-pREPeutedpc2.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/108623",
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "White Fox"
+          }
+        }
+      ]
+    },
+    "averageScore": 71,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Goblin Slayer"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Youjo Senki Movie",
+      "english": "Saga of Tanya the Evil - the Movie -"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100878-npKVJvggmK6a.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/100878",
+    "genres": ["Action", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "NUT"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Tanya Degurechaff"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Chuunibyou demo Koi ga Shitai!: Take On Me",
+      "english": "Love, Chunibyo & Other Delusions: Take on Me"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98762-ofC7Eqsm2KcD.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/98762",
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Rikka Takanashi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Cowboy Bebop: Tengoku no Tobira",
+      "english": "Cowboy Bebop: The Movie - Knockin' on Heaven's Door"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5-NozHwXWdNLCz.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/5",
+    "genres": ["Action", "Drama", "Mystery", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        },
+        {
+          "node": {
+            "name": "Sunrise"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Spike Spiegel"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2001
+    }
+  },
+  {
+    "title": {
+      "romaji": "Omoide no Marnie",
+      "english": "When Marnie Was There"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20555-QGbWQC3Kfpok.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/20555",
+    "genres": ["Drama", "Mystery", "Psychological"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Marnie"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2014
+    }
+  },
+  {
+    "title": {
+      "romaji": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai. Movie",
+      "english": "Anohana: The Flower We Saw That Day Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15039-FDT7nClRVzEf.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/15039",
+    "genres": ["Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Meiko Honma"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Tokyo Godfathers",
+      "english": "Tokyo Godfathers"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx759-vaiRxznGCi9T.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/759",
+    "genres": ["Adventure", "Comedy", "Drama"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Hana"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2003
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kuroko no Basket: Last Game",
+      "english": "Kuroko's Basketball: Last Game"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21377-oRcPPiQ1btPZ.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21377",
+    "genres": ["Comedy", "Sports"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Production I.G"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Tetsuya Kuroko"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Sakasama no Patema",
+      "english": "Patema Inverted"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12477-KtZm8BuvrPYo.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/12477",
+    "genres": ["Adventure", "Romance", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Purple Cow Studio Japan"
+          }
+        },
+        {
+          "node": {
+            "name": "Studio Rikka"
+          }
+        }
+      ]
+    },
+    "averageScore": 76,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Patema"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Go-toubun no Hanayome Movie",
+      "english": "The Quintessential Quintuplets Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131520-kCOY9XBAbMcX.png"
+    },
+    "siteUrl": "https://anilist.co/anime/131520",
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Bibury Animation Studios"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Itsuki Nakano"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2022
+    }
+  },
+  {
+    "title": {
+      "romaji": "Uchiage Hanabi, Shita kara Miru ka? Yoko kara Miru ka?",
+      "english": "Fireworks"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97908-CbfTf71GjJjg.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/97908",
+    "genres": ["Drama", "Romance", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Shaft"
+          }
+        }
+      ]
+    },
+    "averageScore": 59,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Nazuna Oikawa"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Stranger: Mukou Hadan",
+      "english": "Sword of the Stranger"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx2418-AoLtfG2da5yo.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/2418",
+    "genres": ["Action", "Adventure"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Nanashi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2007
+    }
+  },
+  {
+    "title": {
+      "romaji": "ROAD TO NINJA: NARUTO THE MOVIE",
+      "english": "Road to Ninja: Naruto the Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx13667-gAKuIXI2avRq.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/13667",
+    "genres": ["Action", "Adventure"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 74,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Naruto Uzumaki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kyoukai no Kanata: I'LL BE HERE - Mirai-hen",
+      "english": "Beyond the Boundary -I'LL BE HERE-: Future"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx20963-xWZjgqAdFOfn.png"
+    },
+    "siteUrl": "https://anilist.co/anime/20963",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Romance",
+      "Slice of Life",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Mirai Kuriyama"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "Umibe no Étranger",
+      "english": "The Stranger by the Shore"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112788-yzq8eEwO6wan.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/112788",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Hibari"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Mio Chibana"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2020
+    }
+  },
+  {
+    "title": {
+      "romaji": "Dragon Ball Z: Kami to Kami",
+      "english": "Dragon Ball Z: Battle of Gods"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/14837.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/14837",
+    "genres": ["Action", "Adventure", "Comedy", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Toei Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 71,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Gokuu Son"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Zutto Mae kara Suki deshita.: Kokuhaku Jikkou Iinkai",
+      "english": "I've Always Liked You"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21296-WtdIXdg64GCK.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21296",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Qualia Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 70,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Yuu Setoguchi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "Neko no Ongaeshi",
+      "english": "The Cat Returns"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx597-sGQ5YXPMF0AS.png"
+    },
+    "siteUrl": "https://anilist.co/anime/597",
+    "genres": ["Adventure", "Comedy", "Drama", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 74,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Humbert von Gikkingen Danshaku"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2002
+    }
+  },
+  {
+    "title": {
+      "romaji": "PSYCHO-PASS Movie",
+      "english": "PSYCHO-PASS: The Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20514-WhWrHdWWonsC.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/20514",
+    "genres": ["Action", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Production I.G"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shinya Kougami"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "Death Billiards",
+      "english": "Death Billiards"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14353-aV7ePEFdUQ52.png"
+    },
+    "siteUrl": "https://anilist.co/anime/14353",
+    "genres": ["Drama", "Mystery", "Psychological", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 76,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Decim"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka: Orion no Ya",
+      "english": "Is It Wrong to Try to Pick Up Girls in a Dungeon?: Arrow of the Orion"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101166-aF8tzfuui6Bp.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/101166",
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "J.C. Staff"
+          }
+        }
+      ]
+    },
+    "averageScore": 72,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Bell Cranel"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kara no Kyoukai: Satsujin Kousatsu (Zen)",
+      "english": "the Garden of sinners Chapter 2: …and nothing heart. (Murder Speculation Part A)"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3782-b8NzFcoYs9vc.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/3782",
+    "genres": ["Action", "Mystery", "Romance", "Supernatural", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shiki Ryougi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2007
+    }
+  },
+  {
+    "title": {
+      "romaji": "Shikioriori",
+      "english": "Flavors of Youth"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101231-8X1CanhPk9iw.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/101231",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 69,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Yi Lin"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Tensei Shitara Slime Datta Ken: Guren no Kizuna-hen",
+      "english": "That Time I Got Reincarnated as a Slime the Movie: Scarlet Bond"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139498-DdVASeAj7ag4.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/139498",
+    "genres": ["Adventure", "Comedy", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "8-bit"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Rimuru Tempest"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2022
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kaguya-hime no Monogatari",
+      "english": "The Tale of The Princess Kaguya"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/16664-Wakrc8rbBkor.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/16664",
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kaguya-hime"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Liz to Aoi Tori",
+      "english": "Liz and the Blue Bird"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100178-ezSKfxtNoGVs.png"
+    },
+    "siteUrl": "https://anilist.co/anime/100178",
+    "genres": ["Drama", "Music", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Kyoto Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Mizore Yoroizuka"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "HUNTER×HUNTER: Phantom Rouge",
+      "english": "Hunter x Hunter: Phantom Rouge"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx13271-jBxQFqHCpb2K.png"
+    },
+    "siteUrl": "https://anilist.co/anime/13271",
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 71,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Killua Zoldyck"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kono Sekai no Katasumi ni",
+      "english": "In This Corner of the World"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15227-1tG3lhprG0A9.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/15227",
+    "genres": ["Drama", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MAPPA"
+          }
+        }
+      ]
+    },
+    "averageScore": 80,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Suzu Houjou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kurenai no Buta",
+      "english": "Porco Rosso"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx416-vErUcQ5v7rjo.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/416",
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Porco Rosso"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1992
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kara no Kyoukai: Tsuukaku Zanryuu",
+      "english": "the Garden of sinners Chapter 3: ever cry, never life. (Remaining Sense of Pain)"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3783-NziqsWetU1LK.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/3783",
+    "genres": ["Action", "Drama", "Mystery", "Supernatural", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shiki Ryougi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2008
+    }
+  },
+  {
+    "title": {
+      "romaji": "Suzume no Tojimari",
+      "english": "Suzume"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142770-sG9FZa5JxlmE.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/142770",
+    "genres": ["Mystery", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Suzume Iwato"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2022
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kara no Kyoukai: Mujun Rasen",
+      "english": "the Garden of sinners Chapter 5: Paradox Paradigm"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4282-R19YmET0glSZ.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/4282",
+    "genres": [
+      "Action",
+      "Drama",
+      "Mystery",
+      "Romance",
+      "Supernatural",
+      "Thriller"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 84,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shiki Ryougi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2008
+    }
+  },
+  {
+    "title": {
+      "romaji": "Pocket Monsters: Mewtwo no Gyakushuu",
+      "english": "Pokémon: The First Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx528-HIz7955MvEnN.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/528",
+    "genres": ["Adventure", "Comedy", "Drama", "Fantasy", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "OLM"
+          }
+        }
+      ]
+    },
+    "averageScore": 74,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Satoshi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1998
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kara no Kyoukai: Garan no Dou",
+      "english": "the Garden of sinners Chapter 4: garan-no-dou. (The Hollow Shrine)"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4280-GKUNVjzu5sUO.png"
+    },
+    "siteUrl": "https://anilist.co/anime/4280",
+    "genres": ["Action", "Mystery", "Supernatural", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shiki Ryougi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2008
+    }
+  },
+  {
+    "title": {
+      "romaji": "Little Witch Academia: Mahou-jikake no Parade",
+      "english": "Little Witch Academia: The Enchanted Parade"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19489-jOPAElIhmwmB.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/19489",
+    "genres": ["Comedy", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Trigger"
+          }
+        }
+      ]
+    },
+    "averageScore": 76,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Atsuko Kagari"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "Shin Seiki Evangelion Movie: Shi to Shinsei",
+      "english": "Neon Genesis Evangelion: Death & Rebirth"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx31-3zRThtzQH62E.png"
+    },
+    "siteUrl": "https://anilist.co/anime/31",
+    "genres": ["Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Gainax"
+          }
+        },
+        {
+          "node": {
+            "name": "Production I.G"
+          }
+        }
+      ]
+    },
+    "averageScore": 72,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Asuka Langley Souryuu"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 1997
+    }
+  },
+  {
+    "title": {
+      "romaji": "Coquelicot-zaka kara",
+      "english": "From Up on Poppy Hill"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10029-R7iZdjWuzeYq.png"
+    },
+    "siteUrl": "https://anilist.co/anime/10029",
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Ghibli"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shun Kazama"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2011
+    }
+  },
+  {
+    "title": {
+      "romaji": "K: Missing Kings",
+      "english": "K: Missing Kings"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16904-MqA6kzSdRDsK.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/16904",
+    "genres": ["Action", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "GoHands"
+          }
+        }
+      ]
+    },
+    "averageScore": 74,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Neko"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2014
+    }
+  },
+  {
+    "title": {
+      "romaji": "NARUTO: Shippuuden Movie",
+      "english": "Naruto Shippuden the Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2472-mYApVxceStn5.png"
+    },
+    "siteUrl": "https://anilist.co/anime/2472",
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 69,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kakashi Hatake"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2007
+    }
+  },
+  {
+    "title": {
+      "romaji": "Ryuu to Sobakasu no Hime",
+      "english": "BELLE"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127271-juJIu4WFTM8q.png"
+    },
+    "siteUrl": "https://anilist.co/anime/127271",
+    "genres": ["Drama", "Music", "Mystery", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Chizu"
+          }
+        }
+      ]
+    },
+    "averageScore": 74,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Suzu Naitou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2021
+    }
+  },
+  {
+    "title": {
+      "romaji": "Ao no Exorcist Movie",
+      "english": "Blue Exorcist: The Movie"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11737-49ya7CBO5wEq.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/11737",
+    "genres": ["Action", "Fantasy", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 73,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Rin Okumura"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "ONE PIECE FILM: Z",
+      "english": "One Piece Film: Z"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12859-uQFENDPzMWz6.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/12859",
+    "genres": ["Action", "Adventure", "Comedy", "Drama"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Toei Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Luffy D. Monkey"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "Sennen Joyuu",
+      "english": "Millennium Actress"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1033-d5p1pbd5qa4L.png"
+    },
+    "siteUrl": "https://anilist.co/anime/1033",
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Chiyoko Fujiwara"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2002
+    }
+  },
+  {
+    "title": {
+      "romaji": "Hagane no Renkinjutsushi: Shamballa wo Yuku Mono",
+      "english": "Fullmetal Alchemist: The Movie - Conqueror of Shamballa"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx430-Fx7lVxpcwArH.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/430",
+    "genres": ["Action", "Comedy", "Drama", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "bones"
+          }
+        }
+      ]
+    },
+    "averageScore": 70,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Edward Elric"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2005
+    }
+  },
+  {
+    "title": {
+      "romaji": "Colorful",
+      "english": "Colorful ~ The Motion Picture"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8142-C8NvVbzJz7hN.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/8142",
+    "genres": ["Drama", "Slice of Life", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Sunrise"
+          }
+        },
+        {
+          "node": {
+            "name": "Ascension"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Makoto Kobayashi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2010
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kara no Kyoukai: Satsujin Kousatsu (Kou)",
+      "english": "the Garden of sinners Chapter 7: ……not nothing heart. (Murder Speculation Part B)"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5205-kfgpEQI8ERza.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/5205",
+    "genres": ["Action", "Mystery", "Romance", "Supernatural", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 82,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shiki Ryougi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2009
+    }
+  },
+  {
+    "title": {
+      "romaji": "Dragon Ball Z: Fukkatsu no \"F\"",
+      "english": "Dragon Ball Z: Resurrection 'F'"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20778-HYEes09iv8fJ.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/20778",
+    "genres": ["Action", "Adventure", "Comedy", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Toei Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 66,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Gokuu Son"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kara no Kyoukai: Boukyaku Rokuon",
+      "english": "the Garden of sinners Chapter 6: Fairy Tale. (Oblivion Recording)"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5204-6PdYdIXswcEo.png"
+    },
+    "siteUrl": "https://anilist.co/anime/5204",
+    "genres": ["Action", "Mystery", "Romance", "Supernatural", "Thriller"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "ufotable"
+          }
+        }
+      ]
+    },
+    "averageScore": 70,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shiki Ryougi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2008
+    }
+  },
+  {
+    "title": {
+      "romaji": "NARUTO: Blood Prison",
+      "english": "Naruto Shippuden the Movie: Blood Prison"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10589-VhXWWMm24Dso.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/10589",
+    "genres": ["Action", "Adventure", "Mystery"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 71,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Naruto Uzumaki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2011
+    }
+  },
+  {
+    "title": {
+      "romaji": "Gintama: Kanketsu-hen - Yorozuya yo Eien Nare",
+      "english": "Gintama: The Final Chapter - Be Forever Yorozuya"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15335-QjijwChGTBs0.png"
+    },
+    "siteUrl": "https://anilist.co/anime/15335",
+    "genres": ["Action", "Comedy", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Sunrise"
+          }
+        }
+      ]
+    },
+    "averageScore": 87,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Gintoki Sakata"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Saenai Heroine no Sodatekata Fine",
+      "english": "Saekano the Movie: Finale"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100675-Ut2Qyi9gYOKT.png"
+    },
+    "siteUrl": "https://anilist.co/anime/100675",
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CloverWorks"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Megumi Katou"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Hoshi wo Ou Kodomo",
+      "english": "Children who Chase Lost Voices"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9760-Ur2uU0HuF1Iz.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/9760",
+    "genres": ["Adventure", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 71,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Shin Canaan Praeses"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2011
+    }
+  },
+  {
+    "title": {
+      "romaji": "NARUTO: Dai Katsugeki! Yuki Hime Ninpouchou Dattebayo!!",
+      "english": "Naruto the Movie: Ninja Clash in the Land of Snow"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx442-VJbmIVTgmne3.png"
+    },
+    "siteUrl": "https://anilist.co/anime/442",
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 67,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kakashi Hatake"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2004
+    }
+  },
+  {
+    "title": {
+      "romaji": "Fate/stay night Movie: UNLIMITED BLADE WORKS",
+      "english": "Fate/stay night: Unlimited Blade Works (Movie)"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6922-g3hsIYOWGXL8.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/6922",
+    "genres": ["Action", "Drama", "Fantasy", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio DEEN"
+          }
+        }
+      ]
+    },
+    "averageScore": 69,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Rin Tohsaka"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2010
+    }
+  },
+  {
+    "title": {
+      "romaji": "NARUTO: Shippuuden - The Lost Tower",
+      "english": "Naruto Shippuden the Movie: The Lost Tower"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8246-KAi3bLLdJ4OI.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/8246",
+    "genres": ["Action", "Comedy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 70,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Naruto Uzumaki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2010
+    }
+  },
+  {
+    "title": {
+      "romaji": "Mahouka Koukou no Rettousei: Hoshi wo Yobu Shoujo",
+      "english": "The Irregular at Magic High School The Movie: The Girl Who Summons the Stars"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21684-MAT6GdCnfPdR.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21684",
+    "genres": ["Sci-Fi", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "8-bit"
+          }
+        }
+      ]
+    },
+    "averageScore": 72,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Tatsuya Shiba"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Mahou Shoujo Madoka☆Magica Movie: Hajimari no Monogatari",
+      "english": "Puella Magi Madoka Magica the Movie Part I: Beginnings"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11977-U3ssJ4GRFRbl.png"
+    },
+    "siteUrl": "https://anilist.co/anime/11977",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Mahou Shoujo",
+      "Psychological",
+      "Thriller"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Shaft"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Homura Akemi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "HUNTER×HUNTER: THE LAST MISSION",
+      "english": "Hunter x Hunter: The Last Mission"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx19951-kouyrYvcEyGP.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/19951",
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "MADHOUSE"
+          }
+        }
+      ]
+    },
+    "averageScore": 70,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Killua Zoldyck"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Date A Live Movie: Mayuri Judgement",
+      "english": "Date A Live Movie: Mayuri Judgement"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20741-WdThAhseSo1y.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/20741",
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Mecha", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Production IMS"
+          }
+        }
+      ]
+    },
+    "averageScore": 70,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Tooka Yatogami"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2015
+    }
+  },
+  {
+    "title": {
+      "romaji": "Mirai no Mirai",
+      "english": "Mirai"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100749-7Tptl7EAMAWH.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/100749",
+    "genres": ["Comedy", "Drama", "Fantasy", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Chizu"
+          }
+        }
+      ]
+    },
+    "averageScore": 71,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kun"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2018
+    }
+  },
+  {
+    "title": {
+      "romaji": "Mahou Shoujo Madoka☆Magica Movie: Eien no Monogatari",
+      "english": "Puella Magi Madoka Magica the Movie Part II: Eternal"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11979-oiKvt5UXyREg.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/11979",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Mahou Shoujo",
+      "Psychological",
+      "Thriller"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Shaft"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Homura Akemi"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "Berserk: Ougon Jidai-hen I - Haou no Tamago",
+      "english": "Berserk: The Golden Age Arc I - The Egg of the King"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10218-QJgUwiua9tB0.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/10218",
+    "genres": ["Action", "Adventure", "Fantasy", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio 4°C"
+          }
+        }
+      ]
+    },
+    "averageScore": 73,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Guts"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kumo no Mukou, Yakusoku no Basho",
+      "english": "The Place Promised in Our Early Days"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx433-bU0c8iHxoL2G.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/433",
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "CoMix Wave"
+          }
+        }
+      ]
+    },
+    "averageScore": 69,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Sayuri Sawatari"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2004
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai",
+      "english": "Kaguya-sama: Love is War -The First Kiss That Never Ends-"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151384-chTKVy1gMTPi.png"
+    },
+    "siteUrl": "https://anilist.co/anime/151384",
+    "genres": ["Comedy", "Psychological", "Romance", "Slice of Life"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 83,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kaguya Shinomiya"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2022
+    }
+  },
+  {
+    "title": {
+      "romaji": "ONE PIECE STAMPEDE",
+      "english": "One Piece: Stampede"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105143-5uBDmhvMr6At.png"
+    },
+    "siteUrl": "https://anilist.co/anime/105143",
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Toei Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Luffy D. Monkey"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "Yoru wa Mijikashi Arukeyo Otome",
+      "english": "The Night is Short, Walk on Girl"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97917-bHtHhWkIsdR5.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/97917",
+    "genres": ["Comedy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Science SARU"
+          }
+        }
+      ]
+    },
+    "averageScore": 81,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Kurokami no Otome"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "NARUTO: Shippuuden - Kizuna",
+      "english": "Naruto Shippuden the Movie: Bonds"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4437-8LQbBZo4N6yi.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/4437",
+    "genres": ["Action", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio Pierrot"
+          }
+        }
+      ]
+    },
+    "averageScore": 69,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Naruto Uzumaki"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2008
+    }
+  },
+  {
+    "title": {
+      "romaji": "ONE PIECE FILM: STRONG WORLD",
+      "english": "One Piece Film: Strong World"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4155-P5TDf6t6qFwX.png"
+    },
+    "siteUrl": "https://anilist.co/anime/4155",
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Toei Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 78,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Luffy D. Monkey"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2009
+    }
+  },
+  {
+    "title": {
+      "romaji": "Trinity Seven Movie - Yuukyuu Toshokan to Renkinjutsu Shoujo",
+      "english": "Trinity Seven: Eternal Library & Alchemic Girl"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21874-X0MzTN5jehbN.png"
+    },
+    "siteUrl": "https://anilist.co/anime/21874",
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Seven Arcs"
+          }
+        }
+      ]
+    },
+    "averageScore": 69,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Lilith Asami"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Berserk: Ougon Jidai-hen III - Kourin",
+      "english": "Berserk: The Golden Age Arc III - The Advent"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b12115-a0apheImsQ4G.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/12115",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio 4°C"
+          }
+        }
+      ]
+    },
+    "averageScore": 79,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Guts"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2013
+    }
+  },
+  {
+    "title": {
+      "romaji": "Kaijuu no Kodomo",
+      "english": "Children of the Sea"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103221-Ol5OyQ8fbTqH.png"
+    },
+    "siteUrl": "https://anilist.co/anime/103221",
+    "genres": ["Drama", "Mystery", "Supernatural"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio 4°C"
+          }
+        }
+      ]
+    },
+    "averageScore": 72,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Sora"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2019
+    }
+  },
+  {
+    "title": {
+      "romaji": "ONE PIECE FILM: GOLD",
+      "english": "One Piece Film: Gold"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21335-XsXdE0AeOkkZ.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21335",
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Toei Animation"
+          }
+        }
+      ]
+    },
+    "averageScore": 77,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Luffy D. Monkey"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2016
+    }
+  },
+  {
+    "title": {
+      "romaji": "FAIRY TAIL: DRAGON CRY",
+      "english": "Fairy Tail: Dragon Cry"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21191-btDjdLVHzVQp.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/21191",
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "A-1 Pictures"
+          }
+        }
+      ]
+    },
+    "averageScore": 73,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Erza Scarlet"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2017
+    }
+  },
+  {
+    "title": {
+      "romaji": "Berserk: Ougon Jidai-hen II - Doldrey Kouryaku",
+      "english": "Berserk: The Golden Age Arc II - The Battle for Doldrey"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12113-cIF2NXNRX1iB.jpg"
+    },
+    "siteUrl": "https://anilist.co/anime/12113",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Supernatural"
+    ],
+    "studios": {
+      "edges": [
+        {
+          "node": {
+            "name": "Studio 4°C"
+          }
+        }
+      ]
+    },
+    "averageScore": 75,
+    "characters": {
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "userPreferred": "Guts"
+            }
+          }
+        }
+      ]
+    },
+    "startDate": {
+      "year": 2012
+    }
   }
 ]
