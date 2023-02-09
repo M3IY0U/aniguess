@@ -15,9 +15,15 @@
 
 <div class="modal-backdrop" on:click={handleClose} role="none">
   <div class="modal" role="dialog">
-    <button on:click={handleClose}>X</button>
+    <button class="close-button" on:click={handleClose}>X</button>
     <h2>Settings</h2>
-    settings go here
+    <img
+      src="https://cdn.discordapp.com/attachments/493557274371948545/1073315991322378381/wao.gif"
+      width="200"
+      height="200"
+      alt="Okuu"
+    />
+    <br />Coming soon™
   </div>
 </div>
 
@@ -35,7 +41,7 @@
   .modal {
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 40%;
     width: calc(100vw - 4em);
     max-width: 32em;
     max-height: calc(100vh - 4em);
@@ -48,7 +54,7 @@
     box-shadow: 00px 0px 10px #121212;
   }
 
-  button {
+  .close-button {
     display: flex;
     justify-content: center;
     align-items: center;
