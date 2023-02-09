@@ -43,3 +43,11 @@ export function setGuessInfoText(url: string, title?: string) {
   }
   gi.innerHTML = `You lose, the correct answer was: <a target="_blank" href="${url}">${title}</a>`;
 }
+
+export const shouldClose = (e: MouseEvent | KeyboardEvent) => {
+  if (e instanceof MouseEvent) {
+    return e.target === e.currentTarget;
+  } else {
+    return e.key === "Escape";
+  }
+};
