@@ -12,6 +12,11 @@
   import PastGuesses from "./lib/PastGuesses.svelte";
   import AnimeCanvas from "./lib/AnimeCanvas.svelte";
   import { addToGuessesSoFar } from "./lib/util/utilities";
+  import AboutModal from "./lib/AboutModal.svelte";
+  import SettingsModal from "./lib/SettingsModal.svelte";
+
+  let aboutModal = false;
+  let settingsModal = false;
 
   let allEntries = data.map((e) => new Entry(e));
 
@@ -38,11 +43,23 @@
 
 <header class="header">
   <h1>AniGuess</h1>
-  <!-- <div class="meta-buttons">
-    <button class="button-about" />
-    <button class="button-help" />
-  </div> -->
+  <div class="meta-buttons">
+    <button class="button-about" on:click={() => (aboutModal = true)}>
+      <img src="info.svg" width="35" height="35" alt="" />
+    </button>
+    <button class="button-settings" on:click={() => (settingsModal = true)}>
+      <img src="settings.svg" width="35" height="35" alt="" />
+    </button>
+  </div>
 </header>
+
+{#if aboutModal}
+  <AboutModal on:close={() => (aboutModal = false)} />
+{/if}
+
+{#if settingsModal}
+  <SettingsModal on:close={() => (settingsModal = false)} />
+{/if}
 
 <main class="main-container">
   <div
@@ -80,22 +97,49 @@
   p {
     margin: 15px 0 0 5px;
     font-size: larger;
+    color: white;
   }
 
   .header {
+    width: 450px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
     margin: 0 0;
     padding: 0 0;
-    font-size: small;
   }
 
-  /* button {
+  h1 {
+    align-self: center;
+    color: white;
+  }
+
+  .meta-buttons {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .meta-buttons button {
+    align-self: center;
+    justify-content: center;
+    display: flex;
     width: 50px;
     height: 50px;
     border-radius: 15px;
-  } */
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  .button-about img {
+    align-self: center;
+    filter: invert() opacity(0.75);
+  }
+
+  .button-settings img {
+    align-self: center;
+    filter: invert() opacity(0.75);
+  }
 </style>

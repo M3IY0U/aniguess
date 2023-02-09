@@ -51,6 +51,7 @@
     font-size: 2em;
     margin: 0;
     text-align: start;
+    color: white;
   }
 
   #hint-list {
@@ -68,6 +69,7 @@
     margin: 5px 0;
     padding: 10px;
     border: 2px solid #707070;
+    color: white;
     border-radius: 5px;
   }
 </style>

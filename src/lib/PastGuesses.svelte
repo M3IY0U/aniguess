@@ -35,6 +35,7 @@
     font-size: 2em;
     margin: 0;
     text-align: end;
+    color: white;
   }
 
   #past-guesses {
@@ -51,6 +52,7 @@
     margin: 5px 0;
     padding: 10px;
     border: 2px solid #707070;
+    color: white;
     border-radius: 5px;
   }
 </style>

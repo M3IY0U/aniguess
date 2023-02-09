@@ -121,12 +121,16 @@
     padding: 0 10px;
     font-size: 1.2rem;
     outline: none;
+    width: 50%;
+    background-color: #3b3b3b;
   }
 
   button {
     height: 50px;
     border-radius: 15px;
     padding: 0 15px;
+    background-color: #1a1a1a;
+    color: white;
   }
 
   button:disabled {
