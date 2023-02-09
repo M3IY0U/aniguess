@@ -67,18 +67,16 @@
   }
 
   #anime-image {
-    border-radius: 15px;
+    border-radius: 10px;
     align-self: center;
   }
 
   :global(.success) {
     border: 4px solid #4caf50;
-    border-radius: 5px;
   }
 
   :global(.failure) {
     border: 4px solid #f44336;
-    border-radius: 5px;
   }
 
   .banner-container {

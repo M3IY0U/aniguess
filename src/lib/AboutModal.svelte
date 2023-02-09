@@ -15,9 +15,9 @@
 
 <div class="modal-backdrop" on:click={handleClose} role="none">
   <div class="modal" role="dialog">
+    <button on:click={handleClose}>X</button>
     <h2>About</h2>
     about text goes here
-    <button on:click={handleClose}>Close</button>
   </div>
 </div>
 
@@ -42,12 +42,22 @@
     overflow: auto;
     transform: translate(-50%, -50%);
     padding: 1em;
-    border-radius: 0.2em;
-    background: darkgray;
+    border-radius: 10px;
+    background: #555555;
     z-index: 1;
   }
 
   button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    position: fixed;
+    top: 5%;
+    right: 1.5%;
+
   }
+
 </style>

@@ -42,7 +42,7 @@
     overflow: auto;
     transform: translate(-50%, -50%);
     padding: 1em;
-    border-radius: 0.2em;
+    border-radius: 10px;
     background: darkgray;
     z-index: 1;
   }

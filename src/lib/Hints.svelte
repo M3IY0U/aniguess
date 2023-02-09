@@ -70,6 +70,6 @@
     padding: 10px;
     border: 2px solid #707070;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 </style>
