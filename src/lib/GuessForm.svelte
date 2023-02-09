@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Guess, GuessType } from "./util/Guess";
   import {
     entries,
     gameState,
@@ -8,7 +9,7 @@
   } from "./util/stores";
   import { setGuessInfoText } from "./util/utilities";
 
-  let guess = "";
+  let guessText = "";
 
   function startGame() {
     if ($gameState == "running") return;
@@ -17,10 +18,13 @@
 
   function submitClick() {
     if (
-      guess.toLowerCase() == $toGuess.title.english.toLowerCase() ||
-      guess.toLowerCase() == $toGuess.title.romaji.toLowerCase()
+      guessText.toLowerCase() == $toGuess.title.english.toLowerCase() ||
+      guessText.toLowerCase() == $toGuess.title.romaji.toLowerCase()
     ) {
-      pastGuesses.update((arr) => [...arr, `${guess} ✅`]);
+      pastGuesses.update((arr) => [
+        ...arr,
+        new Guess(GuessType.Success, guessText),
+      ]);
       while ($guessProgress < 6) {
         guessProgress.update((n) => n + 1);
       }
@@ -31,11 +35,17 @@
       guessProgress.update(function (n) {
         return Math.min(n + 1, 6);
       });
-      guess = guess.trim() == "" ? "Skipped ⏩" : `${guess} ❌`;
+
+      let guess: Guess;
+      if (guessText.trim() == "") {
+        guess = new Guess(GuessType.Skip);
+      } else {
+        guess = new Guess(GuessType.Failure, guessText);
+      }
 
       pastGuesses.update((arr) => [...arr, guess]);
 
-      guess = "";
+      guessText = "";
       if ($guessProgress == 6) {
         gameState.set("loss");
         setGuessInfoText($toGuess.siteUrl, $toGuess.title.english);
@@ -44,7 +54,7 @@
   }
 
   const skipClick = () => {
-    pastGuesses.update((arr) => [...arr, "Skipped ⏩"]);
+    pastGuesses.update((arr) => [...arr, new Guess(GuessType.Skip)]);
     guessProgress.update(function (n) {
       return Math.min(n + 1, 6);
     });
@@ -63,7 +73,7 @@
     autofocus
     placeholder="Search for an anime"
     list="suggestions"
-    bind:value={guess}
+    bind:value={guessText}
     on:keydown={(e) => {
       if (e.key == "Enter") {
         submitClick();
@@ -82,7 +92,9 @@
   </datalist>
   <div class="action-buttons">
     {#if $gameState == "win" || $gameState == "loss"}
-      <button id="retry-button" on:click={() => window.location.reload()}>Retry</button>
+      <button id="retry-button" on:click={() => window.location.reload()}
+        >Retry</button
+      >
     {:else}
       <button
         class="submit-button"

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount, tick } from "svelte";
-  import { gameState, guessProgress, pastGuesses, toGuess } from "./util/stores";
+  import { gameState, guessProgress, toGuess } from "./util/stores";
 
-  onMount( () => {
+  onMount(() => {
     guessProgress.subscribe(async (n) => {
       if (n < 1) return;
       var hint = document.createElement("li");
@@ -26,17 +26,24 @@
           return;
       }
       hint.title = hint.innerText;
+      hint.classList.add("hint");
       await tick();
+      const children = document.getElementById("hint-list")?.children;
+      if (children) {
+        for (const child of children) {
+          child.classList.remove("hint");
+        }
+      }
       document.getElementById("hint-list").appendChild(hint);
     });
   });
 </script>
 
-{#if $gameState != "idle" }
-<div id="hint-container">
-  <h3>Hints</h3>
-  <ul id="hint-list" />
-</div>
+{#if $gameState != "idle"}
+  <div id="hint-container">
+    <h3>Hints</h3>
+    <ul id="hint-list" />
+  </div>
 {/if}
 
 <style>
@@ -71,5 +78,10 @@
     border: 2px solid #707070;
     color: white;
     border-radius: 10px;
+    transition: border-color 2s ease-in;
+  }
+
+  :global(#hint-list .hint) {
+    border-color: #ffd679;
   }
 </style>
