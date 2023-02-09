@@ -15,9 +15,9 @@
 
 <div class="modal-backdrop" on:click={handleClose} role="none">
   <div class="modal" role="dialog">
+    <button on:click={handleClose}>X</button>
     <h2>Settings</h2>
     settings go here
-    <button on:click={handleClose}>Close</button>
   </div>
 </div>
 
@@ -28,7 +28,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 0;
   }
 
@@ -43,11 +43,20 @@
     transform: translate(-50%, -50%);
     padding: 1em;
     border-radius: 10px;
-    background: darkgray;
+    background: #555555;
     z-index: 1;
+    box-shadow: 00px 0px 10px #121212;
   }
 
   button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    position: fixed;
+    top: 5%;
+    right: 1.5%;
   }
 </style>

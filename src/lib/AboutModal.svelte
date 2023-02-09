@@ -28,7 +28,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 0;
   }
 
@@ -45,6 +45,7 @@
     border-radius: 10px;
     background: #555555;
     z-index: 1;
+    box-shadow: 00px 0px 10px #121212;
   }
 
   button {
@@ -57,7 +58,5 @@
     position: fixed;
     top: 5%;
     right: 1.5%;
-
   }
-
 </style>
