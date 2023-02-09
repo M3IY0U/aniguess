@@ -28,6 +28,19 @@
       While the tab is open, the game keeps track of what you've guessed/skipped
       so far, so theoretically there shouldn't be any duplicates 👍
     </p>
+    <hr />
+    Created by<a
+      href="https://timostestdoma.in"
+      target="_blank"
+      rel="noreferrer">Meiyou</a
+    >, inspired by
+    <a href="https://guessthe.game/" target="_blank" rel="noreferrer"
+      >guessthe.game</a
+    >
+    and
+    <a href="https://animedle.io/" target="_blank" rel="noreferrer"
+      >animedle.io</a
+    >
   </div>
 </div>
 
@@ -71,7 +84,7 @@
     height: 35px;
     border-radius: 10px;
     position: fixed;
-    top: 5%;
+    top: 2%;
     right: 1.5%;
   }
 </style>

@@ -66,7 +66,7 @@
     height: 35px;
     border-radius: 10px;
     position: fixed;
-    top: 5%;
+    top: 2.5%;
     right: 1.5%;
   }
 </style>
