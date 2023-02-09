@@ -9,24 +9,23 @@
   } from "./util/utilities";
 
   let canvas: HTMLCanvasElement;
-  let image: HTMLImageElement;
+  let image = new Image();
 
   toGuess.subscribe((e) => {
     if (e == null) return;
 
-    image = new Image();
     image.src = e.coverImage;
   });
 
   onMount(() => {
-    setTimeout(() => {
-      guessProgress.subscribe((n) => {
-        drawPixelImage(canvas, image, n);
-        if (n >= 6) {
-          drawPixelImage(canvas, image, 100);
-        }
-      });
-    }, 200);
+    image.onload = () => drawPixelImage(canvas, image, 0);
+
+    guessProgress.subscribe((n) => {
+      drawPixelImage(canvas, image, n);
+      if (n >= 6) {
+        drawPixelImage(canvas, image, 100);
+      }
+    });
 
     gameState.subscribe((s) => {
       if (s == "win") {
