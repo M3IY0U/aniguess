@@ -6,7 +6,7 @@
     pastGuesses,
     toGuess,
   } from "./util/stores";
-  import { lose, win } from "./util/utilities";
+  import { setGuessInfoText } from "./util/utilities";
 
   let guess = "";
 
@@ -24,8 +24,9 @@
       while ($guessProgress < 6) {
         guessProgress.update((n) => n + 1);
       }
-      win($toGuess.siteUrl);
+
       gameState.set("win");
+      setGuessInfoText($toGuess.siteUrl);
     } else {
       guessProgress.update(function (n) {
         return Math.min(n + 1, 6);
@@ -36,8 +37,8 @@
 
       guess = "";
       if ($guessProgress == 6) {
-        lose($toGuess.siteUrl, $toGuess.title.english);
         gameState.set("loss");
+        setGuessInfoText($toGuess.siteUrl, $toGuess.title.english);
       }
     }
   }
@@ -48,23 +49,29 @@
       return Math.min(n + 1, 6);
     });
     if ($guessProgress == 6) {
-      lose($toGuess.siteUrl, $toGuess.title.english);
       gameState.set("loss");
+      setGuessInfoText($toGuess.siteUrl, $toGuess.title.english);
     }
   };
 </script>
 
 <div class="guess-input-container">
-  <form on:submit|preventDefault={submitClick} on:submit|once={startGame}>
-    <input
-      id="guess-input"
-      type="text"
-      placeholder="Search for an anime"
-      list="suggestions"
-      bind:value={guess}
-      disabled={$gameState == "win" || $gameState == "loss"}
-    />
-  </form>
+  <!-- svelte-ignore a11y-autofocus -->
+  <input
+    id="guess-input"
+    type="text"
+    autofocus
+    placeholder="Search for an anime"
+    list="suggestions"
+    bind:value={guess}
+    on:keydown={(e) => {
+      if (e.key == "Enter") {
+        submitClick();
+        if ($gameState == "idle") startGame();
+      }
+    }}
+    disabled={$gameState == "win" || $gameState == "loss"}
+  />
   <datalist id="suggestions">
     {#each $entries as entry}
       <option value={entry.title.english} />
@@ -75,9 +82,7 @@
   </datalist>
   <div class="action-buttons">
     {#if $gameState == "win" || $gameState == "loss"}
-      <button id="retry-button" on:click={() => window.location.reload()}
-        >Retry</button
-      >
+      <button id="retry-button" on:click={() => window.location.reload()}>Retry</button>
     {:else}
       <button
         class="submit-button"

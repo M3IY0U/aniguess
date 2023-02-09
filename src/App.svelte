@@ -1,19 +1,38 @@
 <script lang="ts">
   import GuessForm from "./lib/GuessForm.svelte";
   import data from "./assets/data.json";
-  import { entries, gameState, guessProgress, toGuess } from "./lib/util/stores";
+  import {
+    entries,
+    gameState,
+    guessProgress,
+    toGuess,
+  } from "./lib/util/stores";
   import { Entry } from "./lib/util/Entry";
   import Hints from "./lib/Hints.svelte";
   import PastGuesses from "./lib/PastGuesses.svelte";
   import AnimeCanvas from "./lib/AnimeCanvas.svelte";
+  import { addToGuessesSoFar } from "./lib/util/utilities";
 
-  entries.set(data.map((e) => new Entry(e)));
+  let allEntries = data.map((e) => new Entry(e));
+
+  let gsf = JSON.parse(sessionStorage.getItem("guessesSoFar")) || [];
+  entries.set(
+    allEntries.filter((e) => {
+      return !gsf.includes(e.siteUrl.slice(e.siteUrl.lastIndexOf("/") + 1));
+    })
+  );
+
   toGuess.set($entries[Math.floor(Math.random() * $entries.length)]);
 
   let guesses = 6;
 
   guessProgress.subscribe((n) => {
     guesses = 6 - n;
+    if (guesses == 0) {
+      addToGuessesSoFar(
+        $toGuess.siteUrl.slice($toGuess.siteUrl.lastIndexOf("/") + 1)
+      );
+    }
   });
 </script>
 
@@ -26,12 +45,19 @@
 </header>
 
 <main class="main-container">
-  <div id="game-area" style="grid-template-columns: {$gameState == 'idle' ? '1fr' : '1fr 458px 1fr'}">
+  <div
+    id="game-area"
+    style="grid-template-columns: {$gameState == 'idle'
+      ? '1fr'
+      : '1fr 458px 1fr'}"
+  >
     <PastGuesses />
     <AnimeCanvas />
     <Hints />
   </div>
-  <p id="guess-info" class="guesses">{guesses} Guess{guesses > 1 ? "es" : ""} remaining</p>
+  <p id="guess-info">
+    {guesses} Guess{guesses > 1 ? "es" : ""} remaining
+  </p>
   <GuessForm />
 </main>
 

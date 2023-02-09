@@ -1,7 +1,12 @@
 <script lang="ts">
-  import { guessProgress, toGuess, entries } from "./util/stores";
+  import { guessProgress, toGuess, gameState } from "./util/stores";
   import { onMount } from "svelte";
-  import { drawPixelImage, imgHeight, imgWidth } from "./util/utilities";
+  import {
+    drawPixelImage,
+    flashEmoji,
+    imgHeight,
+    imgWidth,
+  } from "./util/utilities";
 
   let canvas: HTMLCanvasElement;
   let image: HTMLImageElement;
@@ -22,6 +27,16 @@
         }
       });
     }, 100);
+
+    gameState.subscribe((s) => {
+      if (s == "win") {
+        canvas.classList.add("success");
+        flashEmoji("🎉");
+      } else if (s == "loss") {
+        canvas.classList.add("failure");
+        flashEmoji("💀");
+      }
+    });
   });
 </script>
 
@@ -32,11 +47,11 @@
     height={imgHeight}
     bind:this={canvas}
   />
-  <div id="result-text" style="opacity: 0%;">🎉</div>
+  <div id="result-emoji" style="opacity: 0%;" />
 </div>
 
 <style>
-  #result-text {
+  :global(#result-emoji) {
     pointer-events: none;
     text-align: center;
     transform: translate(-50%, 0%);
