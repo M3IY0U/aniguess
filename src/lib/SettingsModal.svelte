@@ -28,6 +28,10 @@
 </div>
 
 <style>
+  h2 {
+    margin: 10px 0 0 0;
+  }
+
   .modal-backdrop {
     position: fixed;
     top: 0;
