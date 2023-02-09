@@ -29,7 +29,7 @@
       so far, so theoretically there shouldn't be any duplicates 👍
     </p>
     <hr />
-    Created by<a
+    Created by <a
       href="https://timostestdoma.in"
       target="_blank"
       rel="noreferrer">Meiyou</a
@@ -71,7 +71,7 @@
     transform: translate(-50%, -50%);
     padding: 1em;
     border-radius: 10px;
-    background: #555555;
+    background: #242424;
     z-index: 1;
     box-shadow: 00px 0px 10px #121212;
   }
