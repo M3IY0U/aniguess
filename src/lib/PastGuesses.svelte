@@ -52,6 +52,8 @@
     margin: 0;
     float: right;
     text-align: end;
+    display: flex;
+    flex-direction: column;
   }
 
   :global(#past-guesses li) {
@@ -63,6 +65,8 @@
     color: white;
     border-radius: 10px;
     transition: border-color 2s ease-in;
+    align-self: flex-end;
+    width: fit-content;
   }
 
   .failure {

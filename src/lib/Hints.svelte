@@ -67,6 +67,8 @@
     margin: 0;
     float: left;
     text-align: start;
+    display: flex;
+    flex-direction: column;
   }
 
   :global(#hint-list li) {
@@ -79,6 +81,8 @@
     color: white;
     border-radius: 10px;
     transition: border-color 2s ease-in;
+    align-self: flex-start;
+    width: fit-content;
   }
 
   :global(#hint-list .hint) {
