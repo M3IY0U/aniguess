@@ -1,13 +1,25 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
-  import { shouldClose } from "./util/utilities";
+  import { userEntries } from "./util/stores";
+  import { flashEmoji, getMediaListFromAnilist, shouldClose } from "./util/utilities";
 
   const dispatch = createEventDispatcher();
+  let name: string = localStorage.getItem("anilist-name") || "";
 
   const handleClose = (e: KeyboardEvent | MouseEvent) => {
     if (shouldClose(e)) {
       dispatch("close");
     }
+  };
+
+  const setHandler = async () => {
+    getMediaListFromAnilist(name).then((data) => {
+      console.log(data);
+      
+      userEntries.set(data);
+      localStorage.setItem("anilist-name", name);
+      flashEmoji("✅");
+    });
   };
 </script>
 
@@ -17,19 +29,33 @@
   <div class="modal" role="dialog">
     <button class="close-button" on:click={handleClose}>X</button>
     <h2>Settings</h2>
-    <img
-      src="https://cdn.discordapp.com/attachments/493557274371948545/1073315991322378381/wao.gif"
-      width="200"
-      height="200"
-      alt="Okuu"
-    />
-    <br />Coming soon™
+    <div class="settings-content">
+      <label for="anilist-name">Filter to user anilist</label>
+      <input type="text" name="anilist-name" id="anilist-name" placeholder="Username" bind:value={name}>
+      <button class="set-button" on:click={setHandler} >Set</button>
+      <br />
+      <label for="movie-toggle">Enable Movies</label>
+      <input
+        type="checkbox"
+        name="Movies"
+        id="movie-toggle"
+        value="Movie Checkbox"
+      />
+    </div>
   </div>
 </div>
 
 <style>
+  .set-button {
+    border-radius: 10px;
+  }
+
+  .settings-content {
+    float: left;
+    text-align: left;
+  }
   h2 {
-    margin: 10px 0 0 0;
+    margin: 0;
   }
 
   .modal-backdrop {

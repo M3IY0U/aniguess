@@ -8,3 +8,4 @@ export const toGuess = writable(null as Entry | null);
 export const entries = writable(new Array<Entry>());
 export const pastGuesses = writable(new Array<Guess>());
 export const gameState = writable("idle");
+export const userEntries = writable(new Array<number>());

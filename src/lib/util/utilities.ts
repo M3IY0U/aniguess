@@ -1,3 +1,5 @@
+import { gql, request } from "graphql-request";
+
 export function flashEmoji(emoji: string) {
   var div = document.getElementById("result-emoji");
   div.innerText = emoji;
@@ -51,3 +53,24 @@ export const shouldClose = (e: MouseEvent | KeyboardEvent) => {
     return e.key === "Escape";
   }
 };
+
+export async function getMediaListFromAnilist(name: string) {
+  let entries = [];
+
+  await request("https://graphql.anilist.co", 
+  gql`{
+    MediaListCollection (userName: "$user", type: ANIME){
+      lists {
+        entries {
+          mediaId
+        }
+      }
+    }
+  }
+  `.replace("$user", name)).then((data) => {
+    data.MediaListCollection.lists.forEach((list) => {
+      entries.push(list.entries.map((entry) => entry.mediaId));
+    });
+  });
+  return entries.flat();
+}

@@ -17,6 +17,7 @@
   <div class="modal" role="dialog">
     <button class="close-button" on:click={handleClose}>X</button>
     <h2>About</h2>
+    <hr />
     This is a game where you have to guess an anime based on a pixelated image of
     it, which gets clearer with each failed (or skipped) guess. You also unlock hints
     as you play.
@@ -47,7 +48,7 @@
 <style>
   h2,
   h3 {
-    margin: 10px 0 0 0;
+    margin: 0;
   }
 
   .modal-backdrop {
