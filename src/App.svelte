@@ -2,6 +2,7 @@
   import GuessForm from "./lib/GuessForm.svelte";
   import data from "./assets/data.json";
   import {
+  enabledFormats,
     entries,
     gameState,
     guessProgress,
@@ -14,6 +15,7 @@
   import { addToGuessesSoFar } from "./lib/util/utilities";
   import AboutModal from "./lib/AboutModal.svelte";
   import SettingsModal from "./lib/SettingsModal.svelte";
+  import { onMount } from "svelte";
 
   let aboutModal = false;
   let settingsModal = false;
@@ -26,6 +28,26 @@
       return !gsf.includes(e.siteUrl.slice(e.siteUrl.lastIndexOf("/") + 1));
     })
   );
+
+  onMount(async () => {
+    console.log(gsf);
+    console.log($enabledFormats);
+    
+    
+    await fetch("https://ag-api.timostestdoma.in/entries", {
+      method: "PUT",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "alreadyGuessed": gsf,
+        "enabledFormats": $enabledFormats
+      }),
+    }).then((res) => res.json()).then((data) => {
+      console.log(data);
+    });
+  });
 
   toGuess.set($entries[Math.floor(Math.random() * $entries.length)]);
 

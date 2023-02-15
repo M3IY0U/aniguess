@@ -9,3 +9,4 @@ export const entries = writable(new Array<Entry>());
 export const pastGuesses = writable(new Array<Guess>());
 export const gameState = writable("idle");
 export const userEntries = writable(new Array<number>());
+export const enabledFormats = writable(["TV", "MOVIE", "ONA"]);

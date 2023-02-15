@@ -57,17 +57,20 @@ export const shouldClose = (e: MouseEvent | KeyboardEvent) => {
 export async function getMediaListFromAnilist(name: string) {
   let entries = [];
 
-  await request("https://graphql.anilist.co", 
-  gql`{
-    MediaListCollection (userName: "$user", type: ANIME){
-      lists {
-        entries {
-          mediaId
+  await request(
+    "https://graphql.anilist.co",
+    gql`
+      {
+        MediaListCollection(userName: "$user", type: ANIME) {
+          lists {
+            entries {
+              mediaId
+            }
+          }
         }
       }
-    }
-  }
-  `.replace("$user", name)).then((data) => {
+    `.replace("$user", name)
+  ).then((data) => {
     data.MediaListCollection.lists.forEach((list) => {
       entries.push(list.entries.map((entry) => entry.mediaId));
     });
