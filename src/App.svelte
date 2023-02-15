@@ -2,7 +2,7 @@
   import GuessForm from "./lib/GuessForm.svelte";
   import data from "./assets/data.json";
   import {
-  enabledFormats,
+    enabledFormats,
     entries,
     gameState,
     guessProgress,
@@ -32,7 +32,7 @@
   onMount(async () => {
     console.log(gsf);
     console.log($enabledFormats);
-    
+
     
     await fetch("https://ag-api.timostestdoma.in/entries", {
       method: "PUT",
@@ -45,8 +45,8 @@
         "enabledFormats": $enabledFormats
       }),
     }).then((res) => res.json()).then((data) => {
-      console.log(data);
-    });
+        console.log(data);
+      });
   });
 
   toGuess.set($entries[Math.floor(Math.random() * $entries.length)]);
@@ -57,7 +57,7 @@
     guesses = 6 - n;
     if (guesses == 0) {
       addToGuessesSoFar(
-        $toGuess.siteUrl.slice($toGuess.siteUrl.lastIndexOf("/") + 1)
+        parseInt($toGuess.siteUrl.slice($toGuess.siteUrl.lastIndexOf("/") + 1))
       );
     }
   });

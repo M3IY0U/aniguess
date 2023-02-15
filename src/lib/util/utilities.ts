@@ -29,7 +29,7 @@ export function drawPixelImage(
   ctx.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
 }
 
-export function addToGuessesSoFar(id: string) {
+export function addToGuessesSoFar(id: number) {
   let guessesSoFar =
     JSON.parse(sessionStorage.getItem("guessesSoFar")) || new Array<string>();
   guessesSoFar.push(id);
