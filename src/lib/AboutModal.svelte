@@ -30,7 +30,7 @@
       so far, so theoretically there shouldn't be any duplicates 👍
     </p>
     <hr />
-    Created by <a
+    Created by<a
       href="https://timostestdoma.in"
       target="_blank"
       rel="noreferrer">Meiyou</a
@@ -42,16 +42,27 @@
     <a href="https://animedle.io/" target="_blank" rel="noreferrer"
       >animedle.io</a
     >
-    <a
-      href="https://github.com/M3IY0U/aniguess"
-      target="_blank"
-      rel="noreferrer"
-      ><img
-        src="github-mark-white.svg"
-        alt="Project on Github"
-        class="github-icon"
-      /></a
-    >
+    <div class="link-icon-container">
+      <a
+        href="https://github.com/M3IY0U/aniguess"
+        target="_blank"
+        rel="noreferrer"
+        ><img
+          src="github-mark-white.svg"
+          alt="Project on Github"
+          class="link-icon"
+        /></a
+      >
+      <div class="divider" />
+      <a href="https://ko-fi.com/meiyou" target="_blank" rel="noreferrer"
+        ><img
+          src="ko-fi.svg"
+          alt="Support me on Ko-Fi"
+          class="link-icon"
+          style="filter: invert(1);"
+        /></a
+      >
+    </div>
   </div>
 </div>
 
@@ -99,11 +110,29 @@
     right: 1.5%;
   }
 
-  .github-icon {
+  .link-icon {
+    height: 35px;
     width: 35px;
+    align-self: center;
+  }
+
+  .link-icon-container {
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    width: 85px;
     height: 35px;
     position: fixed;
     top: 2%;
     left: 1.5%;
+  }
+
+  .divider {
+    align-self: center;
+    width: 1px;
+    height: 95%;
+    background: #fff;
+    border-radius: 25%;
+    margin: 0 0;
   }
 </style>
