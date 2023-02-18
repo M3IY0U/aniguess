@@ -22,18 +22,22 @@ export function drawPixelImage(
   var scaledW = imgWidth / scale;
   var scaledH = imgHeight / scale;
 
-  var ctx = canvas.getContext("2d");
-  ctx.imageSmoothingEnabled = false;
+  try {
+    var ctx = canvas.getContext("2d");
+    ctx.imageSmoothingEnabled = false;
 
-  ctx.drawImage(image, 0, 0, scaledW, scaledH);
-  ctx.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
+    ctx.drawImage(image, 0, 0, scaledW, scaledH);
+    ctx.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
+  } catch (error) {
+    // ignored
+  }
 }
 
 export function addToGuessesSoFar(id: number) {
   let guessesSoFar =
-    JSON.parse(sessionStorage.getItem("guessesSoFar")) || new Array<string>();
+    JSON.parse(sessionStorage.getItem("guesses-so-far")) || new Array<string>();
   guessesSoFar.push(id);
-  sessionStorage.setItem("guessesSoFar", JSON.stringify(guessesSoFar));
+  sessionStorage.setItem("guesses-so-far", JSON.stringify(guessesSoFar));
 }
 
 export function setGuessInfoText(url: string, title?: string) {

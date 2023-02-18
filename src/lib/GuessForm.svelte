@@ -1,7 +1,7 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { Guess, GuessType } from "./util/Guess";
   import {
-    entries,
     gameState,
     guessProgress,
     pastGuesses,
@@ -10,6 +10,7 @@
   import { setGuessInfoText } from "./util/utilities";
 
   let guessText = "";
+  let allEntries = [];
 
   function startGame() {
     if ($gameState == "running") return;
@@ -63,6 +64,25 @@
       setGuessInfoText($toGuess.siteUrl, $toGuess.title.english);
     }
   };
+
+  onMount(async () => {
+    if (localStorage.getItem("autocomplete-entries") == null) {
+      const response = await fetch(
+        "https://ag-api.timostestdoma.in/autocomplete",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      localStorage.setItem("autocomplete-entries", JSON.stringify(data));
+      allEntries = data;
+    } else {
+      allEntries = JSON.parse(localStorage.getItem("autocomplete-entries"));
+    }
+  });
 </script>
 
 <div class="guess-input-container">
@@ -83,10 +103,10 @@
     disabled={$gameState == "win" || $gameState == "loss"}
   />
   <datalist id="suggestions">
-    {#each $entries as entry}
-      <option value={entry.title.english} />
-      {#if entry.title.romaji != entry.title.english}
-        <option value={entry.title.romaji} />
+    {#each allEntries as entry}
+      <option value={entry.title_e} />
+      {#if entry.title_r.toLowerCase() != entry.title_e.toLowerCase()}
+        <option value={entry.title_r} />
       {/if}
     {/each}
   </datalist>

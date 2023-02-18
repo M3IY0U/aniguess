@@ -1,9 +1,7 @@
 <script lang="ts">
   import GuessForm from "./lib/GuessForm.svelte";
-  import data from "./assets/data.json";
   import {
     enabledFormats,
-    entries,
     gameState,
     guessProgress,
     toGuess,
@@ -20,36 +18,55 @@
   let aboutModal = false;
   let settingsModal = false;
 
-  let allEntries = data.map((e) => new Entry(e));
+  let gsf = JSON.parse(sessionStorage.getItem("guesses-so-far")) || [];
 
-  let gsf = JSON.parse(sessionStorage.getItem("guessesSoFar")) || [];
-  entries.set(
-    allEntries.filter((e) => {
-      return !gsf.includes(e.siteUrl.slice(e.siteUrl.lastIndexOf("/") + 1));
-    })
-  );
+  enabledFormats.subscribe((arr) => {
+    if (arr.length == 0) return;
+    localStorage.setItem("enabled-formats", JSON.stringify(arr));
+  });
 
   onMount(async () => {
-    console.log(gsf);
-    console.log($enabledFormats);
-
-    
+    if (localStorage.getItem("enabled-formats") == null) {
+      enabledFormats.set(["TV", "MOVIE", "ONA"]);
+      localStorage.setItem("enabled-formats", JSON.stringify($enabledFormats));
+    } else {
+      enabledFormats.set(JSON.parse(localStorage.getItem("enabled-formats")));
+    }
     await fetch("https://ag-api.timostestdoma.in/entries", {
       method: "PUT",
       headers: {
-        "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "alreadyGuessed": gsf,
-        "enabledFormats": $enabledFormats
+        alreadyGuessed: gsf,
+        enabledFormats: $enabledFormats,
+        userEntries: JSON.parse(localStorage.getItem("user-entries")) || [],
       }),
-    }).then((res) => res.json()).then((data) => {
-        console.log(data);
+    })
+      .then((res) => {
+        if (res.status == 418) {
+          throw new Error(
+            `
+You've run out of stuff to guess. That means: 
+1. Either you're very dedicated and guessed over 1000 things
+2. You've guessed everything the server can give you with the filters
+   you've set. You can toggle them or reset your progress in the settings.
+            `
+          );
+        }
+        return res.json();
+      })
+      .then((data) => {
+        toGuess.set(new Entry(data));
+      })
+      .catch((err) => {
+        let msg = err.message.toLowerCase();
+        if (msg.includes("failed to fetch") || msg.includes("networkerror")) {
+          err.message = "You're being ratelimited, try again in ~1 minute";
+        }
+        alert(err.message);
       });
   });
-
-  toGuess.set($entries[Math.floor(Math.random() * $entries.length)]);
 
   let guesses = 6;
 
