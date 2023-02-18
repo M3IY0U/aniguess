@@ -44,7 +44,7 @@
       }),
     })
       .then((res) => {
-        if (res.status == 418) {
+        if (res.status == 204) {
           throw new Error(
             `
 You've run out of stuff to guess. That means: 
