@@ -42,6 +42,9 @@
     <a href="https://animedle.io/" target="_blank" rel="noreferrer"
       >animedle.io</a
     >
+    <a href="https://github.com/M3IY0U/aniguess"  
+      ><img src="./github-mark-white.svg" alt="Get on Github" class="github-icon"></a
+    >
   </div>
 </div>
 
@@ -87,5 +90,13 @@
     position: fixed;
     top: 2%;
     right: 1.5%;
+  }
+
+  .github-icon {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 2%;
+    left: 1.5%;
   }
 </style>
