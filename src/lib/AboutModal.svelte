@@ -42,8 +42,15 @@
     <a href="https://animedle.io/" target="_blank" rel="noreferrer"
       >animedle.io</a
     >
-    <a href="https://github.com/M3IY0U/aniguess"  
-      ><img src="github-mark-white.svg" alt="Project on Github" class="github-icon"></a
+    <a
+      href="https://github.com/M3IY0U/aniguess"
+      target="_blank"
+      rel="noreferrer"
+      ><img
+        src="github-mark-white.svg"
+        alt="Project on Github"
+        class="github-icon"
+      /></a
     >
   </div>
 </div>
