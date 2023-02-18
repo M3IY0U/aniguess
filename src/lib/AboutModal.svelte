@@ -43,7 +43,7 @@
       >animedle.io</a
     >
     <a href="https://github.com/M3IY0U/aniguess"  
-      ><img src="./github-mark-white.svg" alt="Get on Github" class="github-icon"></a
+      ><img src="github-mark-white.svg" alt="Project on Github" class="github-icon"></a
     >
   </div>
 </div>
