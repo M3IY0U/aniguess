@@ -45,7 +45,7 @@
 {#if !minimized}
   <div transition:scale class="stats-container">
     <div
-      class="reset-stats-button"
+      class="base-button reset-stats-button"
       on:click={resetStats}
       on:keypress={resetStats}
       title="Reset Stats"
@@ -54,7 +54,7 @@
     </div>
 
     <div
-      class="minimize-button"
+      class="base-button minimize-button"
       on:click={toggleStats}
       on:keypress={toggleStats}
       title="Minimize Stats"
@@ -71,7 +71,7 @@
 {:else}
   <div
     transition:fade
-    class="show-stats-button"
+    class="base-button show-stats-button"
     on:click={toggleStats}
     on:keypress={toggleStats}
     title="Show Stats"
@@ -81,76 +81,67 @@
 {/if}
 
 <style>
+  :root {
+    --background-color: #1a1a1a;
+    --button-color: #3b3b3b;
+    --button-highlight-color: #313131;
+  }
   .stats-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #1a1a1a;
+    background-color: var(--background-color);
     width: 20em;
     height: 10em;
     border-radius: 10px;
     transform-origin: bottom left;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
   }
   h2 {
     margin: 0;
     padding: 0;
   }
 
-  .reset-stats-button {
+  .base-button {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 2em;
     height: 2em;
     border-radius: 10px;
-    background-color: #3b3b3b;
+    background-color: var(--button-color);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     user-select: none;
+  }
+
+  .reset-stats-button {
+    top: 0;
+    left: 0;
   }
 
   .reset-stats-button:hover {
-    background-color: #313131;
+    background-color: var(--button-highlight-color);
   }
 
   .minimize-button {
-    position: absolute;
     bottom: 0;
     left: 0;
-    width: 2em;
-    height: 2em;
-    border-radius: 10px;
-    background-color: #3b3b3b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
   }
 
   .minimize-button:hover {
-    background-color: #313131;
+    background-color: var(--button-highlight-color);
   }
 
   .show-stats-button {
-    position: absolute;
-    font-weight: bolder;
     bottom: 0;
     left: 0;
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    background-color: #3b3b3b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
   }
   .show-stats-button:hover {
-    background-color: #313131;
+    background-color: var(--button-highlight-color);
   }
 </style>

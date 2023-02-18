@@ -126,6 +126,7 @@ You've run out of stuff to guess. That means:
     position: absolute;
     bottom: 2em;
     left: 2em;
+    z-index: 0;
   }
   .main-container {
     display: flex;
