@@ -14,6 +14,7 @@
   import AboutModal from "./lib/AboutModal.svelte";
   import SettingsModal from "./lib/SettingsModal.svelte";
   import { onMount } from "svelte";
+  import Stats from "./lib/Stats.svelte";
 
   let aboutModal = false;
   let settingsModal = false;
@@ -115,9 +116,17 @@ You've run out of stuff to guess. That means:
     {guesses} Guess{guesses > 1 ? "es" : ""} remaining
   </p>
   <GuessForm />
+  <div class="stats-area">
+    <Stats />
+  </div>
 </main>
 
 <style>
+  .stats-area {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+  }
   .main-container {
     display: flex;
     flex-direction: column;
@@ -134,7 +143,7 @@ You've run out of stuff to guess. That means:
   }
 
   p {
-    margin: 15px 0 0 5px;
+    margin: 15px 0 0 0;
     font-size: larger;
     color: white;
   }
