@@ -1,3 +1,5 @@
+import { GuessType } from "./Enums";
+
 export class Guess {
   text: string;
   type: GuessType;
@@ -20,8 +22,4 @@ export class Guess {
   }
 }
 
-export enum GuessType {
-  Success = "success",
-  Failure = "failure",
-  Skip = "skip",
-}
+export { GuessType };

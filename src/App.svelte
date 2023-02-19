@@ -2,6 +2,7 @@
   import GuessForm from "./lib/GuessForm.svelte";
   import {
     enabledFormats,
+    gameMode,
     gameState,
     guessProgress,
     toGuess,
@@ -16,22 +17,37 @@
   import { onMount } from "svelte";
   import Stats from "./lib/Stats.svelte";
   import { inject } from "@vercel/analytics";
+  import { Gamemode } from "./lib/util/Enums";
 
   if (sessionStorage.getItem("analytics") == null) {
     sessionStorage.setItem("analytics", "");
-    inject();
+    try {
+      inject();
+    } catch {
+      // ignore
+    }
   }
   let aboutModal = false;
   let settingsModal = false;
-
-  let gsf = JSON.parse(sessionStorage.getItem("guesses-so-far")) || [];
 
   enabledFormats.subscribe((arr) => {
     if (arr.length == 0) return;
     localStorage.setItem("enabled-formats", JSON.stringify(arr));
   });
 
+  gameMode.subscribe((gm) => {
+    if (gm == null) return;
+    localStorage.setItem("gamemode", gm);
+  });
+
   onMount(async () => {
+    if (localStorage.getItem("gamemode") == null) {
+      localStorage.setItem("gamemode", Gamemode.Pixelated);
+      gameMode.set(Gamemode.Pixelated);
+    } else {
+      gameMode.set(localStorage.getItem("gamemode") as Gamemode);
+    }
+
     if (localStorage.getItem("enabled-formats") == null) {
       enabledFormats.set(["TV", "MOVIE", "ONA"]);
       localStorage.setItem("enabled-formats", JSON.stringify($enabledFormats));
@@ -44,7 +60,8 @@
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        alreadyGuessed: gsf,
+        alreadyGuessed:
+          JSON.parse(sessionStorage.getItem("guesses-so-far")) || [],
         enabledFormats: $enabledFormats,
         userEntries: JSON.parse(localStorage.getItem("user-entries")) || [],
       }),

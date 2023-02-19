@@ -1,7 +1,8 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
   import { onMount } from "svelte";
-  import { enabledFormats, userEntries } from "./util/stores";
+  import { Gamemode } from "./util/Enums";
+  import { enabledFormats, gameMode, userEntries } from "./util/stores";
   import {
     flashEmoji,
     getMediaListFromAnilist,
@@ -11,6 +12,8 @@
   const dispatch = createEventDispatcher();
   let name: string = localStorage.getItem("anilist-name") || "";
   let ona: boolean, movie: boolean, tv: boolean;
+  let gm: Gamemode = $gameMode;
+  $: gameMode.set(gm);
 
   const handleClose = (e: KeyboardEvent | MouseEvent) => {
     if (shouldClose(e)) {
@@ -87,6 +90,30 @@
     <button class="close-button" on:click={handleClose}>X</button>
     <h2>Settings</h2>
     <div class="settings-content">
+      <fieldset class="gamemode-section">
+        <legend>Gamemode</legend>
+        <div class="gamemode-selection">
+          <input
+            type="radio"
+            name="gamemode"
+            value={Gamemode.Pixelated}
+            id="gamemode-pixelated"
+            bind:group={gm}
+          />
+          <label for="gamemode-pixelated">Pixelated</label>
+        </div>
+        <div class="gamemode-selection">
+          <input
+            type="radio"
+            name="gamemode"
+            value={Gamemode.Cropped}
+            id="gamemode-cropped"
+            bind:group={gm}
+          />
+          <label for="gamemode-pixelated">Cropped</label>
+        </div>
+      </fieldset>
+      <hr />
       <section class="checkboxes">
         <div class="checkbox-setting">
           <input
@@ -152,6 +179,13 @@
 </div>
 
 <style>
+  .gamemode-section,
+  .gamemode-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .settings-meta {
     margin-top: 10px;
   }
@@ -200,10 +234,10 @@
     align-items: center;
     margin: 0.5em 0;
   }
-  .checkboxes input[type="checkbox"] {
+  .checkboxes input[type="checkbox"],
+  input[type="radio"] {
     width: 1.5em;
     height: 1.5em;
-    margin: 0;
   }
   .checkboxes {
     display: flex;
