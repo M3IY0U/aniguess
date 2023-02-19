@@ -15,7 +15,12 @@
   import SettingsModal from "./lib/SettingsModal.svelte";
   import { onMount } from "svelte";
   import Stats from "./lib/Stats.svelte";
+  import { inject } from "@vercel/analytics";
 
+  if (sessionStorage.getItem("analytics") == null) {
+    sessionStorage.setItem("analytics", "");
+    inject();
+  }
   let aboutModal = false;
   let settingsModal = false;
 
@@ -61,10 +66,6 @@ You've run out of stuff to guess. That means:
         toGuess.set(new Entry(data));
       })
       .catch((err) => {
-        let msg = err.message.toLowerCase();
-        if (msg.includes("failed to fetch") || msg.includes("networkerror")) {
-          err.message = "You're being ratelimited, try again in ~1 minute";
-        }
         alert(err.message);
       });
   });

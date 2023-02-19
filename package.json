@@ -21,6 +21,7 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.10",
     "graphql-request": "^5.1.0"
   }
 }

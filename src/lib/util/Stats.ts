@@ -17,7 +17,7 @@ export class Stats {
     this.accuracy = 0;
     this.bestStreak = 0;
     this.currentStreak = 0;
-
+    
     this.totalGuesses = 0;
     this.guessAvg = 0;
   }
@@ -34,7 +34,9 @@ export class Stats {
       this.bestStreak = this.currentStreak;
     }
 
-    this.accuracy = this.correctRounds / this.totalRounds;
+    this.accuracy = parseFloat(
+      ((this.correctRounds / this.totalRounds) * 100).toFixed(2)
+    );
   }
   addGuess(): void {
     this.totalGuesses++;

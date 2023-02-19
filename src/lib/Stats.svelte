@@ -64,9 +64,9 @@
     <h2>Stats</h2>
     Correct: {stats.correctRounds}<br />
     Rounds total: {stats.totalRounds}<br />
-    Accuracy: {(stats.accuracy * 100).toFixed(2)}% <br />
+    Accuracy: {stats.accuracy}% <br />
     Best Streak: {stats.bestStreak} <br />
-    Current Streak: {stats.currentStreak} <br />
+    Current Streak: {stats.currentStreak}
     Total Guesses: {stats.totalGuesses} <br />
     Average Guesses: {stats.guessAvg} <br />
   </div>
