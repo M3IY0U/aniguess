@@ -28,12 +28,13 @@
     if (s != "win" && s != "loss") return;
 
     stats.addRound(s == "win");
-
+    stats = stats;
     sessionStorage.setItem("stats", JSON.stringify(stats));
   });
 
   pastGuesses.subscribe(() => {
     stats.addGuess();
+    stats = stats;
   });
 
   function resetStats() {
@@ -66,7 +67,7 @@
     Rounds total: {stats.totalRounds}<br />
     Accuracy: {stats.accuracy}% <br />
     Best Streak: {stats.bestStreak} <br />
-    Current Streak: {stats.currentStreak}
+    Current Streak: {stats.currentStreak} <br />
     Total Guesses: {stats.totalGuesses} <br />
     Average Guesses: {stats.guessAvg} <br />
   </div>

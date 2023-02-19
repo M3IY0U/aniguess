@@ -8,7 +8,7 @@
       var hint = document.createElement("li");
       switch (n) {
         case 1:
-          hint.innerText = `💡 Average Score: ${$toGuess.title.english}%`;
+          hint.innerText = `💡 Average Score: ${$toGuess.averageScore}%`;
           break;
         case 2:
           hint.innerText = `💡 Started in: ${$toGuess.startDate}`;

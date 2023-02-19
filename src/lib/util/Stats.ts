@@ -1,3 +1,4 @@
+import { GuessType, type Guess } from "./Guess";
 import { gameState } from "./stores";
 
 export class Stats {
@@ -38,6 +39,7 @@ export class Stats {
       ((this.correctRounds / this.totalRounds) * 100).toFixed(2)
     );
   }
+
   addGuess(): void {
     this.totalGuesses++;
     this.guessAvg = parseFloat(
