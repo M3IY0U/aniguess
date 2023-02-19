@@ -17,7 +17,10 @@
   import Stats from "./lib/Stats.svelte";
   import { inject } from "@vercel/analytics";
 
-  inject();
+  if (sessionStorage.getItem("analytics") == null) {
+    sessionStorage.setItem("analytics", "");
+    inject();
+  }
   let aboutModal = false;
   let settingsModal = false;
 
