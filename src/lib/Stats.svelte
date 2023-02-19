@@ -27,12 +27,8 @@
   gameState.subscribe((s) => {
     if (s != "win" && s != "loss") return;
 
-    if (s == "win") {
-      stats.add(true);
-    } else if (s == "loss") {
-      stats.add(false);
-    }
-    stats = stats;
+    stats.add(s == "win");
+    
     sessionStorage.setItem("stats", JSON.stringify(stats));
   });
 
@@ -64,9 +60,9 @@
     <h2>Stats</h2>
     Correct: {stats.correctRounds}<br />
     Rounds total: {stats.totalRounds}<br />
-    Accuracy: {stats.accuracy.toFixed(2)}% <br />
-    Best Streak {stats.bestStreak} <br />
-    Current Streak {stats.currentStreak}
+    Accuracy: {(stats.accuracy * 100).toFixed(2)}% <br />
+    Best Streak: {stats.bestStreak} <br />
+    Current Streak: {stats.currentStreak}
   </div>
 {:else}
   <div
