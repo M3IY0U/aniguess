@@ -8,15 +8,21 @@ export class Stats {
   currentStreak: number;
   lastResult: boolean;
 
+  totalGuesses: number;
+  guessAvg: number;
+
   constructor() {
     this.totalRounds = 0;
     this.correctRounds = 0;
     this.accuracy = 0;
     this.bestStreak = 0;
     this.currentStreak = 0;
+
+    this.totalGuesses = 0;
+    this.guessAvg = 0;
   }
 
-  add(result: boolean): void {
+  addRound(result: boolean): void {
     this.totalRounds++;
     if (result) {
       this.correctRounds++;
@@ -29,5 +35,11 @@ export class Stats {
     }
 
     this.accuracy = this.correctRounds / this.totalRounds;
+  }
+  addGuess(): void {
+    this.totalGuesses++;
+    this.guessAvg = parseFloat(
+      (this.totalGuesses / (this.totalRounds + 1)).toFixed(2)
+    );
   }
 }
