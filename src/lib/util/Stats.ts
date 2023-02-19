@@ -28,6 +28,8 @@ export class Stats {
       this.bestStreak = this.currentStreak;
     }
 
-    this.accuracy = this.correctRounds / this.totalRounds;
+    this.accuracy = parseFloat(
+      ((this.correctRounds / this.totalRounds) * 100).toFixed(2)
+    );
   }
 }

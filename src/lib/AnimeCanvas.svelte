@@ -64,6 +64,7 @@
     margin: 0;
     text-align: center;
     transition: opacity 0.4s ease-in-out;
+    z-index: 10;
   }
 
   #anime-image {
