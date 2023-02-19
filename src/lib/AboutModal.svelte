@@ -30,7 +30,7 @@
       so far, so theoretically there shouldn't be any duplicates 👍
     </p>
     <hr />
-    Created by<a
+    Created by <a
       href="https://timostestdoma.in"
       target="_blank"
       rel="noreferrer">Meiyou</a
