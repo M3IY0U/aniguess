@@ -22,9 +22,6 @@
 
     guessProgress.subscribe((n) => {
       drawPixelImage(canvas, image, n);
-      if (n >= 6) {
-        drawPixelImage(canvas, image, 100);
-      }
     });
 
     gameState.subscribe((s) => {
