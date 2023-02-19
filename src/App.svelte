@@ -61,10 +61,6 @@ You've run out of stuff to guess. That means:
         toGuess.set(new Entry(data));
       })
       .catch((err) => {
-        let msg = err.message.toLowerCase();
-        if (msg.includes("failed to fetch") || msg.includes("networkerror")) {
-          err.message = "You're being ratelimited, try again in ~1 minute";
-        }
         alert(err.message);
       });
   });
