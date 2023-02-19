@@ -96,7 +96,7 @@
     justify-content: flex-start;
     background-color: var(--background-color);
     width: 20em;
-    height: 13em;
+    height: fit-content;
     border-radius: 10px;
     transform-origin: bottom left;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
