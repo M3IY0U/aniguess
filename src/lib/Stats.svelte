@@ -2,7 +2,7 @@
   import { fade, scale } from "svelte/transition";
   import { onMount } from "svelte";
   import { Stats } from "./util/Stats";
-  import { gameState } from "./util/stores";
+  import { gameState, pastGuesses } from "./util/stores";
 
   let minimized: boolean =
     JSON.parse(localStorage.getItem("minimized")) ?? false;
@@ -27,10 +27,14 @@
   gameState.subscribe((s) => {
     if (s != "win" && s != "loss") return;
 
-    stats.add(s == "win");
-    
+    stats.addRound(s == "win");
     stats = stats;
     sessionStorage.setItem("stats", JSON.stringify(stats));
+  });
+
+  pastGuesses.subscribe(() => {
+    stats.addGuess();
+    stats = stats;
   });
 
   function resetStats() {
@@ -63,7 +67,9 @@
     Rounds total: {stats.totalRounds}<br />
     Accuracy: {stats.accuracy}% <br />
     Best Streak: {stats.bestStreak} <br />
-    Current Streak: {stats.currentStreak}
+    Current Streak: {stats.currentStreak} <br />
+    Total Guesses: {stats.totalGuesses} <br />
+    Average Guesses: {stats.guessAvg} <br />
   </div>
 {:else}
   <div
@@ -90,7 +96,7 @@
     justify-content: flex-start;
     background-color: var(--background-color);
     width: 20em;
-    height: 10em;
+    height: fit-content;
     border-radius: 10px;
     transform-origin: bottom left;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
