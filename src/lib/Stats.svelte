@@ -28,7 +28,7 @@
     if (s != "win" && s != "loss") return;
 
     stats.add(s == "win");
-
+    
     sessionStorage.setItem("stats", JSON.stringify(stats));
   });
 
@@ -60,7 +60,7 @@
     <h2>Stats</h2>
     Correct: {stats.correctRounds}<br />
     Rounds total: {stats.totalRounds}<br />
-    Accuracy: {stats.accuracy * 100}% <br />
+    Accuracy: {(stats.accuracy * 100).toFixed(2)}% <br />
     Best Streak: {stats.bestStreak} <br />
     Current Streak: {stats.currentStreak}
   </div>
