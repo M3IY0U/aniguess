@@ -41,22 +41,31 @@ export function drawPixelImage(
   ctx.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
 }
 
+const regionSize = parseInt(localStorage.getItem("crop-size")) || 100;
+const pastLocations = [];
+
 export function drawCroppedImage(
   canvas: HTMLCanvasElement,
   image: HTMLImageElement,
   scale: number
 ) {
-  var scaledW = (scale + 1) * 30;
-  var scaledH = (scale + 1) * 30;
-
-  var x = Math.floor(Math.random() * (image.width - 40)) + 20;
-  var y = Math.floor(Math.random() * (image.height - 40)) + 20;
-  console.log(x, y);
+  let { x, y } = getNoOverlapPosition();
+  pastLocations.push({ x1: x, y1: y, x2: x + regionSize, y2: y + regionSize });
 
   var ctx = canvas.getContext("2d");
 
   if (scale < 6) {
-    ctx.drawImage(image, x, y, scaledW, scaledH, x, y, scaledW, scaledH);
+    ctx.drawImage(
+      image,
+      x,
+      y,
+      regionSize,
+      regionSize,
+      x,
+      y,
+      regionSize,
+      regionSize
+    );
   } else {
     ctx.drawImage(
       image,
@@ -70,4 +79,28 @@ export function drawCroppedImage(
       canvas.height
     );
   }
+}
+
+function randomPointOnCanvas() {
+  let x = Math.floor(Math.random() * (imgWidth - regionSize + 1));
+  let y = Math.floor(Math.random() * (imgHeight - regionSize + 1));
+  return { x, y };
+}
+
+function getNoOverlapPosition() {
+  if (pastLocations.length === 0) {
+    return randomPointOnCanvas();
+  }
+
+  let { x, y } = randomPointOnCanvas();
+  let overlap = false;
+  for (let i = 0; i < pastLocations.length; i++) {
+    let { x1, y1, x2, y2 } = pastLocations[i];
+    if (x < x2 && x + regionSize > x1 && y < y2 && y + regionSize > y1) {
+      overlap = true;
+      break;
+    }
+  }
+
+  return overlap ? getNoOverlapPosition() : { x, y };
 }

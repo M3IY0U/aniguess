@@ -13,6 +13,7 @@
   let name: string = localStorage.getItem("anilist-name") || "";
   let ona: boolean, movie: boolean, tv: boolean;
   let gm: Gamemode = $gameMode;
+  let cropSize = parseInt(localStorage.getItem("crop-size")) || 100;
   $: gameMode.set(gm);
 
   const handleClose = (e: KeyboardEvent | MouseEvent) => {
@@ -90,29 +91,46 @@
     <button class="close-button" on:click={handleClose}>X</button>
     <h2>Settings</h2>
     <div class="settings-content">
-      <fieldset class="gamemode-section">
-        <legend>Gamemode</legend>
-        <div class="gamemode-selection">
-          <input
-            type="radio"
-            name="gamemode"
-            value={Gamemode.Pixelated}
-            id="gamemode-pixelated"
-            bind:group={gm}
-          />
-          <label for="gamemode-pixelated">Pixelated</label>
-        </div>
-        <div class="gamemode-selection">
-          <input
-            type="radio"
-            name="gamemode"
-            value={Gamemode.Cropped}
-            id="gamemode-cropped"
-            bind:group={gm}
-          />
-          <label for="gamemode-pixelated">Cropped</label>
-        </div>
-      </fieldset>
+      <section class="gamemode-settings">
+        <fieldset class="gamemode-section">
+          <legend>Gamemode</legend>
+          <div class="gamemode-selection">
+            <input
+              type="radio"
+              name="gamemode"
+              value={Gamemode.Pixelated}
+              id="gamemode-pixelated"
+              bind:group={gm}
+            />
+            <label for="gamemode-pixelated">Pixelated</label>
+          </div>
+          <div class="gamemode-selection">
+            <input
+              type="radio"
+              name="gamemode"
+              value={Gamemode.Cropped}
+              id="gamemode-cropped"
+              bind:group={gm}
+            />
+            <label for="gamemode-pixelated">Cropped</label>
+          </div>
+        </fieldset>
+        {#if gm == Gamemode.Cropped}
+          <div style="align-self: flex-end;width: 12em;">
+            <label for="cropsize-slider">Crop Size {cropSize}</label>
+            <input
+              type="range"
+              min="10"
+              max="110"
+              name="Crop Size Slider"
+              bind:value={cropSize}
+              on:change={() =>
+                localStorage.setItem("crop-size", cropSize.toString())}
+              id="cropsize-slider"
+            />
+          </div>
+        {/if}
+      </section>
       <hr />
       <section class="checkboxes">
         <div class="checkbox-setting">
@@ -179,6 +197,11 @@
 </div>
 
 <style>
+  .gamemode-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .gamemode-section,
   .gamemode-selection {
     display: flex;
@@ -273,7 +296,6 @@
     top: 40%;
     width: calc(100vw - 4em);
     max-width: 32em;
-    max-height: calc(100vh - 4em);
     overflow: auto;
     transform: translate(-50%, -50%);
     padding: 1em;

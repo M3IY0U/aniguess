@@ -48,6 +48,10 @@
       gameMode.set(localStorage.getItem("gamemode") as Gamemode);
     }
 
+    if(localStorage.getItem("crop-size") == null) {
+      localStorage.setItem("crop-size", "100");
+    }
+
     if (localStorage.getItem("enabled-formats") == null) {
       enabledFormats.set(["TV", "MOVIE", "ONA"]);
       localStorage.setItem("enabled-formats", JSON.stringify($enabledFormats));
