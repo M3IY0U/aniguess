@@ -96,6 +96,7 @@
     background: #242424;
     z-index: 2;
     box-shadow: 00px 0px 10px #121212;
+    color: white;
   }
 
   .close-button {
@@ -108,6 +109,8 @@
     position: fixed;
     top: 2%;
     right: 1.5%;
+    background-color: #1a1a1a;
+    color: white;
   }
 
   .link-icon {
