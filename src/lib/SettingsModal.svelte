@@ -185,11 +185,12 @@
         </form>
       </section>
       <section class="settings-meta">
-        <button class="reset-button" on:click={resetProgress}
+        <button class="base-button reset-button" on:click={resetProgress}
           >Reset Progress</button
         >
-        <button class="apply-button" on:click={() => location.reload()}
-          >Apply (Reload)</button
+        <button
+          class="base-button apply-button"
+          on:click={() => location.reload()}>Apply (Reload)</button
         >
       </section>
     </div>
@@ -235,20 +236,23 @@
     align-self: center;
     justify-self: center;
     vertical-align: middle;
+    color: white;
+  }
+
+  .base-button {
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 1em;
+    color: white;
+    background-color: #1a1a1a;
   }
 
   .reset-button {
-    margin-top: 1em;
     float: left;
-    border-radius: 10px;
-    padding: 5px;
   }
 
   .apply-button {
-    margin-top: 1em;
     float: right;
-    border-radius: 10px;
-    padding: 5px;
   }
   .checkbox-setting {
     display: flex;
@@ -271,6 +275,8 @@
   .set-button,
   .clear-button {
     border-radius: 10px;
+    background-color: #1a1a1a;
+    color: white;
   }
 
   .settings-content {
@@ -305,6 +311,7 @@
     box-shadow: 00px 0px 10px #121212;
     display: flex;
     flex-direction: column;
+    color: white;
   }
 
   .close-button {
@@ -317,5 +324,7 @@
     position: fixed;
     top: 2.5%;
     right: 1.5%;
+    background-color: #1a1a1a;
+    color: white;
   }
 </style>
