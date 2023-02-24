@@ -80,7 +80,9 @@
 
   function resetProgress() {
     sessionStorage.removeItem("guesses-so-far");
+    sessionStorage.removeItem("stats");
     flashEmoji("✅");
+    location.reload();
   }
 </script>
 
