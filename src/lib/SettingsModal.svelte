@@ -16,72 +16,74 @@
   let cropSize = parseInt(localStorage.getItem("crop-size")) || 80;
   $: gameMode.set(gm);
 
-  const handleClose = (e: KeyboardEvent | MouseEvent) => {
-    if (shouldClose(e)) {
-      dispatch("close");
-    }
-  };
+    const handleClose = (e: KeyboardEvent | MouseEvent) => {
+        if (shouldClose(e)) {
+            dispatch("close");
+        }
+    };
 
-  const setHandler = async () => {
-    if (name == "") return;
+    const setHandler = async () => {
+        if (name == "") return;
 
-    getMediaListFromAnilist(name).then((data) => {
-      userEntries.set(data);
-      localStorage.setItem("anilist-name", name);
-      localStorage.setItem("user-entries", JSON.stringify(data));
-      flashEmoji("✅");
+        getMediaListFromAnilist(name).then((data) => {
+            userEntries.set(data);
+            localStorage.setItem("anilist-name", name);
+            localStorage.setItem("user-entries", JSON.stringify(data));
+            flashEmoji("✅");
+        });
+    };
+
+    const clearHandler = () => {
+        localStorage.removeItem("user-entries");
+        localStorage.removeItem("anilist-name");
+        name = "";
+        flashEmoji("✅");
+    };
+
+    onMount(() => {
+        $enabledFormats.forEach((format) => {
+            switch (format) {
+                case "TV":
+                    tv = true;
+                    break;
+                case "MOVIE":
+                    movie = true;
+                    break;
+                case "ONA":
+                    ona = true;
+                    break;
+            }
+        });
     });
-  };
 
-  const clearHandler = () => {
-    localStorage.removeItem("user-entries");
-    localStorage.removeItem("anilist-name");
-    name = "";
-    flashEmoji("✅");
-  };
-
-  onMount(() => {
-    $enabledFormats.forEach((format) => {
-      switch (format) {
-        case "TV":
-          tv = true;
-          break;
-        case "MOVIE":
-          movie = true;
-          break;
-        case "ONA":
-          ona = true;
-          break;
-      }
-    });
-  });
-
-  function handleSetting(e: any) {
-    // update enabledFormats
-    if (e.target.checked) {
-      enabledFormats.update((arr) => {
-        arr.push(e.target.name);
-        return arr;
-      });
-    } else {
-      enabledFormats.update((arr) => {
-        return arr.filter((format) => format != e.target.name);
-      });
+    function handleSetting(e: any) {
+        // update enabledFormats
+        if (e.target.checked) {
+            enabledFormats.update((arr) => {
+                arr.push(e.target.name);
+                return arr;
+            });
+        } else {
+            enabledFormats.update((arr) => {
+                return arr.filter((format) => format != e.target.name);
+            });
+        }
+        // keep at least one box checked
+        if ($enabledFormats.length == 0) {
+            e.target.checked = true;
+            enabledFormats.update((arr) => {
+                arr.push(e.target.name);
+                return arr;
+            });
+        }
     }
-    // keep at least one box checked
-    if ($enabledFormats.length == 0) {
-      e.target.checked = true;
-      enabledFormats.update((arr) => {
-        arr.push(e.target.name);
-        return arr;
-      });
-    }
-  }
 
-  function resetProgress() {
-    sessionStorage.removeItem("guesses-so-far");
-    flashEmoji("✅");
-  }
+    function resetProgress() {
+        sessionStorage.removeItem("guesses-so-far");
+        sessionStorage.removeItem("stats");
+        flashEmoji("✅");
+        location.reload();
+    }
 </script>
 
 <svelte:window on:keydown={handleClose} />
@@ -194,7 +196,6 @@
         >
       </section>
     </div>
-  </div>
 </div>
 
 <style>
@@ -281,22 +282,22 @@
     color: white;
   }
 
-  .settings-content {
-    text-align: left;
-  }
-  h2 {
-    margin: 0;
-  }
+    .settings-content {
+        text-align: left;
+    }
+    h2 {
+        margin: 0;
+    }
 
-  .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-  }
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
 
   .modal {
     position: absolute;
