@@ -100,6 +100,7 @@
     border-radius: 10px;
     transform-origin: bottom left;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+    color: white;
   }
   h2 {
     margin: 0;

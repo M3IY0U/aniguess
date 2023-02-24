@@ -146,6 +146,7 @@
   }
 
   input {
+    font-family: Quicksand;
     float: left;
     height: 50px;
     border-radius: 10px;
@@ -155,6 +156,7 @@
     outline: none;
     width: 50%;
     background-color: #3b3b3b;
+    color: white;
   }
 
   button {

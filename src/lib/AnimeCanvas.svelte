@@ -1,12 +1,8 @@
 <script lang="ts">
-  import { guessProgress, toGuess, gameState } from "./util/stores";
+  import { guessProgress, toGuess, gameState, gameMode } from "./util/stores";
   import { onMount } from "svelte";
-  import {
-    drawPixelImage,
-    flashEmoji,
-    imgHeight,
-    imgWidth,
-  } from "./util/utilities";
+  import { flashEmoji } from "./util/utilities";
+  import { drawImage, imgWidth, imgHeight } from "./util/Drawing";
 
   let canvas: HTMLCanvasElement;
   let image = new Image();
@@ -18,10 +14,10 @@
   });
 
   onMount(() => {
-    image.onload = () => drawPixelImage(canvas, image, 0);
+    image.onload = () => drawImage($gameMode, canvas, image, 0);
 
     guessProgress.subscribe((n) => {
-      drawPixelImage(canvas, image, n);
+      drawImage($gameMode, canvas, image, n);
     });
 
     gameState.subscribe((s) => {

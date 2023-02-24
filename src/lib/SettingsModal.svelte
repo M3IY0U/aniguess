@@ -1,7 +1,8 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
   import { onMount } from "svelte";
-  import { enabledFormats, userEntries } from "./util/stores";
+  import { Gamemode } from "./util/Enums";
+  import { enabledFormats, gameMode, userEntries } from "./util/stores";
   import {
     flashEmoji,
     getMediaListFromAnilist,
@@ -11,6 +12,9 @@
   const dispatch = createEventDispatcher();
   let name: string = localStorage.getItem("anilist-name") || "";
   let ona: boolean, movie: boolean, tv: boolean;
+  let gm: Gamemode = $gameMode;
+  let cropSize = parseInt(localStorage.getItem("crop-size")) || 80;
+  $: gameMode.set(gm);
 
   const handleClose = (e: KeyboardEvent | MouseEvent) => {
     if (shouldClose(e)) {
@@ -87,6 +91,47 @@
     <button class="close-button" on:click={handleClose}>X</button>
     <h2>Settings</h2>
     <div class="settings-content">
+      <section class="gamemode-settings">
+        <fieldset class="gamemode-section">
+          <legend>Gamemode</legend>
+          <div class="gamemode-selection">
+            <input
+              type="radio"
+              name="gamemode"
+              value={Gamemode.Pixelated}
+              id="gamemode-pixelated"
+              bind:group={gm}
+            />
+            <label for="gamemode-pixelated">Pixelated</label>
+          </div>
+          <div class="gamemode-selection">
+            <input
+              type="radio"
+              name="gamemode"
+              value={Gamemode.Cropped}
+              id="gamemode-cropped"
+              bind:group={gm}
+            />
+            <label for="gamemode-pixelated">Cropped</label>
+          </div>
+        </fieldset>
+        {#if gm == Gamemode.Cropped}
+          <div style="align-self: flex-end;width: 12em;">
+            <label for="cropsize-slider">Crop Size {cropSize}</label>
+            <input
+              type="range"
+              min="10"
+              max="110"
+              name="Crop Size Slider"
+              bind:value={cropSize}
+              on:change={() =>
+                localStorage.setItem("crop-size", cropSize.toString())}
+              id="cropsize-slider"
+            />
+          </div>
+        {/if}
+      </section>
+      <hr />
       <section class="checkboxes">
         <div class="checkbox-setting">
           <input
@@ -140,11 +185,12 @@
         </form>
       </section>
       <section class="settings-meta">
-        <button class="reset-button" on:click={resetProgress}
-          >Reset Progress</button
+        <button class="base-button reset-button" on:click={resetProgress}
+          >Reset guesses so far</button
         >
-        <button class="apply-button" on:click={() => location.reload()}
-          >Apply (Reload)</button
+        <button
+          class="base-button apply-button"
+          on:click={() => location.reload()}>Apply (Reload)</button
         >
       </section>
     </div>
@@ -152,6 +198,20 @@
 </div>
 
 <style>
+  .gamemode-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #808080;
+    border-radius: 10px;
+  }
+  .gamemode-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+  }
+
   .settings-meta {
     margin-top: 10px;
   }
@@ -178,20 +238,23 @@
     align-self: center;
     justify-self: center;
     vertical-align: middle;
+    color: white;
+  }
+
+  .base-button {
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 1em;
+    color: white;
+    background-color: #1a1a1a;
   }
 
   .reset-button {
-    margin-top: 1em;
     float: left;
-    border-radius: 10px;
-    padding: 5px;
   }
 
   .apply-button {
-    margin-top: 1em;
     float: right;
-    border-radius: 10px;
-    padding: 5px;
   }
   .checkbox-setting {
     display: flex;
@@ -200,10 +263,10 @@
     align-items: center;
     margin: 0.5em 0;
   }
-  .checkboxes input[type="checkbox"] {
+  .checkboxes input[type="checkbox"],
+  input[type="radio"] {
     width: 1.5em;
     height: 1.5em;
-    margin: 0;
   }
   .checkboxes {
     display: flex;
@@ -214,6 +277,8 @@
   .set-button,
   .clear-button {
     border-radius: 10px;
+    background-color: #1a1a1a;
+    color: white;
   }
 
   .settings-content {
@@ -239,7 +304,6 @@
     top: 40%;
     width: calc(100vw - 4em);
     max-width: 32em;
-    max-height: calc(100vh - 4em);
     overflow: auto;
     transform: translate(-50%, -50%);
     padding: 1em;
@@ -249,6 +313,7 @@
     box-shadow: 00px 0px 10px #121212;
     display: flex;
     flex-direction: column;
+    color: white;
   }
 
   .close-button {
@@ -261,5 +326,7 @@
     position: fixed;
     top: 2.5%;
     right: 1.5%;
+    background-color: #1a1a1a;
+    color: white;
   }
 </style>
