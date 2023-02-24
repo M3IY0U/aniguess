@@ -19,7 +19,11 @@
 
   if (sessionStorage.getItem("analytics") == null) {
     sessionStorage.setItem("analytics", "");
-    inject();
+    try {
+      inject();
+    } catch {
+      // ignored
+    }
   }
   let aboutModal = false;
   let settingsModal = false;
