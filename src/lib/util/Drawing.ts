@@ -44,6 +44,21 @@ export function drawPixelImage(
 const regionSize = parseInt(localStorage.getItem("crop-size")) || 100;
 const pastLocations = [];
 
+function roundedImage(ctx, x, y, size, radius) {
+  ctx.beginPath();
+  ctx.moveTo(x + radius, y);
+  ctx.lineTo(x + size - radius, y);
+  ctx.quadraticCurveTo(x + size, y, x + size, y + radius);
+  ctx.lineTo(x + size, y + size - radius);
+  ctx.quadraticCurveTo(x + size, y + size, x + size - radius, y + size);
+  ctx.lineTo(x + radius, y + size);
+  ctx.quadraticCurveTo(x, y + size, x, y + size - radius);
+  ctx.lineTo(x, y + radius);
+  ctx.quadraticCurveTo(x, y, x + radius, y);
+  ctx.closePath();
+  ctx.clip();
+}
+
 export function drawCroppedImage(
   canvas: HTMLCanvasElement,
   image: HTMLImageElement,
@@ -55,6 +70,8 @@ export function drawCroppedImage(
   var ctx = canvas.getContext("2d");
 
   if (scale < 6) {
+    ctx.save();
+    roundedImage(ctx, x, y, regionSize, 10);
     ctx.drawImage(
       image,
       x,
@@ -66,6 +83,7 @@ export function drawCroppedImage(
       regionSize,
       regionSize
     );
+    ctx.restore();
   } else {
     ctx.drawImage(
       image,
