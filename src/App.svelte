@@ -48,7 +48,7 @@
       gameMode.set(localStorage.getItem("gamemode") as Gamemode);
     }
 
-    if(localStorage.getItem("crop-size") == null) {
+    if (localStorage.getItem("crop-size") == null) {
       localStorage.setItem("crop-size", "100");
     }
 
