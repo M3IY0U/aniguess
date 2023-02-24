@@ -24,7 +24,7 @@
     try {
       inject();
     } catch {
-      // ignore
+      // ignored
     }
   }
   let aboutModal = false;
