@@ -13,7 +13,7 @@
   let name: string = localStorage.getItem("anilist-name") || "";
   let ona: boolean, movie: boolean, tv: boolean;
   let gm: Gamemode = $gameMode;
-  let cropSize = parseInt(localStorage.getItem("crop-size")) || 100;
+  let cropSize = parseInt(localStorage.getItem("crop-size")) || 80;
   $: gameMode.set(gm);
 
   const handleClose = (e: KeyboardEvent | MouseEvent) => {
@@ -186,7 +186,7 @@
       </section>
       <section class="settings-meta">
         <button class="base-button reset-button" on:click={resetProgress}
-          >Reset Progress</button
+          >Reset guesses so far</button
         >
         <button
           class="base-button apply-button"
@@ -202,12 +202,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 2px solid #808080;
+    border-radius: 10px;
   }
-  .gamemode-section,
-  .gamemode-selection {
+  .gamemode-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: none;
   }
 
   .settings-meta {

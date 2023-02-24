@@ -1,5 +1,7 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
+  import { Gamemode } from "./util/Enums";
+  import { gameMode } from "./util/stores";
   import { shouldClose } from "./util/utilities";
 
   const dispatch = createEventDispatcher();
@@ -18,16 +20,18 @@
     <button class="close-button" on:click={handleClose}>X</button>
     <h2>About</h2>
     <hr />
-    This is a game where you have to guess an anime based on a pixelated image of
-    it, which gets clearer with each failed (or skipped) guess. You also unlock hints
-    as you play.
+    This is a game where you have to guess an anime based on {$gameMode ==
+    Gamemode.Pixelated
+      ? `its pixelated poster, which gets clearer with each failed (or skipped) guess`
+      : `(adjustable) cropped sections of the full poster`}. You also unlock
+    hints as you play.
     <h3>Important Info</h3>
     <u>Please use the autocomplete feature</u> to search for/enter anime, while
     the comparison isn't case sensitive, it still relies on correct spelling and
     it does <u>not</u> have fuzzy matching.
     <p>
       While the tab is open, the game keeps track of what you've guessed/skipped
-      so far, so theoretically there shouldn't be any duplicates 👍
+      so far, so there shouldn't be any duplicates 👍
     </p>
     <hr />
     Created by <a

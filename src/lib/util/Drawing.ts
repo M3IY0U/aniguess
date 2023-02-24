@@ -44,7 +44,14 @@ export function drawPixelImage(
 const regionSize = parseInt(localStorage.getItem("crop-size")) || 100;
 const pastLocations = [];
 
-function roundedImage(ctx, x, y, size, radius) {
+// shoutout https://stackoverflow.com/a/19593950
+function roundedImage(
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  size: number,
+  radius: number
+) {
   ctx.beginPath();
   ctx.moveTo(x + radius, y);
   ctx.lineTo(x + size - radius, y);
@@ -100,8 +107,8 @@ export function drawCroppedImage(
 }
 
 function randomPointOnCanvas() {
-  let x = Math.floor(Math.random() * (imgWidth - regionSize + 1));
-  let y = Math.floor(Math.random() * (imgHeight - regionSize + 1));
+  let x = Math.floor(Math.random() * (imgWidth - regionSize));
+  let y = Math.floor(Math.random() * (imgHeight - regionSize));
   return { x, y };
 }
 
