@@ -29,6 +29,14 @@
         flashEmoji("💀");
       }
     });
+
+    gameMode.subscribe(() => {
+      canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i <= $guessProgress; i++) {
+        drawImage($gameMode, canvas, image, i);
+      }
+    });
   });
 </script>
 
