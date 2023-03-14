@@ -131,7 +131,6 @@
   });
 
   function shareResult(): any {
-    // copy past guesses to clipboard from store
     let text = `__AniGuess Daily ${new Date().toLocaleDateString()}__\n`;
 
     let maxLength =
@@ -141,14 +140,14 @@
     $pastGuesses.forEach((guess, i) => {
       switch (guess.type) {
         case GuessType.Success:
-          text += `\`#${i + 1}\` ||${guess.text
+          text += `\`#${i + 1}\` ||\`${guess.text
             .substring(0, guess.text.length - 2)
-            .padEnd(maxLength)}|| ✅\n`;
+            .padEnd(maxLength)}\`|| ✅\n`;
           break;
         case GuessType.Failure:
-          text += `\`#${i + 1}\` ||${guess.text
+          text += `\`#${i + 1}\` ||\`${guess.text
             .substring(0, guess.text.length - 2)
-            .padEnd(maxLength)}|| ❌\n`;
+            .padEnd(maxLength)}\`|| ❌\n`;
           break;
         case GuessType.Skip:
           text += `\`#${i + 1}\` Skipped ⏭️\n`;
