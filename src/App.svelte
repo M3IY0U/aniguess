@@ -18,6 +18,7 @@
   import Stats from "./lib/Stats.svelte";
   import { inject } from "@vercel/analytics";
   import { Gamemode } from "./lib/util/Enums";
+  import { Route } from "tinro";
 
   if (sessionStorage.getItem("analytics") == null) {
     sessionStorage.setItem("analytics", "");
@@ -103,45 +104,48 @@ You've run out of stuff to guess. That means:
   });
 </script>
 
-<header class="header">
-  <h1>AniGuess</h1>
-  <div class="meta-buttons">
-    <button class="button-about" on:click={() => (aboutModal = true)}>
-      <img src="info.svg" width="35" height="35" alt="" />
-    </button>
-    <button class="button-settings" on:click={() => (settingsModal = true)}>
-      <img src="settings.svg" width="35" height="35" alt="" />
-    </button>
-  </div>
-</header>
+<Route path="/">
+  <header class="header">
+    <h1>AniGuess</h1>
+    <div class="meta-buttons">
+      <button class="button-about" on:click={() => (aboutModal = true)}>
+        <img src="info.svg" width="35" height="35" alt="" />
+      </button>
+      <button class="button-settings" on:click={() => (settingsModal = true)}>
+        <img src="settings.svg" width="35" height="35" alt="" />
+      </button>
+    </div>
+  </header>
 
-{#if aboutModal}
-  <AboutModal on:close={() => (aboutModal = false)} />
-{/if}
+  {#if aboutModal}
+    <AboutModal on:close={() => (aboutModal = false)} />
+  {/if}
 
-{#if settingsModal}
-  <SettingsModal on:close={() => (settingsModal = false)} />
-{/if}
+  {#if settingsModal}
+    <SettingsModal on:close={() => (settingsModal = false)} />
+  {/if}
 
-<main class="main-container">
-  <div
-    id="game-area"
-    style="grid-template-columns: {$gameState == 'idle'
-      ? '1fr'
-      : '1fr 458px 1fr'}"
-  >
-    <PastGuesses />
-    <AnimeCanvas />
-    <Hints />
-  </div>
-  <p id="guess-info">
-    {guesses} Guess{guesses > 1 ? "es" : ""} remaining
-  </p>
-  <GuessForm />
-  <div class="stats-area">
-    <Stats />
-  </div>
-</main>
+  <main class="main-container">
+    <div
+      id="game-area"
+      style="grid-template-columns: {$gameState == 'idle'
+        ? '1fr'
+        : '1fr 458px 1fr'}"
+    >
+      <PastGuesses />
+      <AnimeCanvas />
+      <Hints />
+    </div>
+    <p id="guess-info">
+      {guesses} Guess{guesses > 1 ? "es" : ""} remaining
+    </p>
+    <GuessForm />
+    <div class="stats-area">
+      <Stats />
+    </div>
+  </main>
+</Route>
+<Route path="/daily">Daily Mode</Route>
 
 <style>
   .stats-area {
