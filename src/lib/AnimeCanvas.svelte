@@ -1,7 +1,6 @@
 <script lang="ts">
   import { guessProgress, toGuess, gameState, gameMode } from "./util/stores";
   import { onMount } from "svelte";
-  import { flashEmoji } from "./util/utilities";
   import { drawImage, imgWidth, imgHeight } from "./util/Drawing";
 
   let canvas: HTMLCanvasElement;
@@ -14,20 +13,16 @@
   });
 
   onMount(() => {
-    image.onload = () => drawImage($gameMode, canvas, image, 0);
+    image.onload = () => {
+      if ($gameState == "win" || $gameState == "loss") {
+        drawImage($gameMode, canvas, image, 6);
+      } else {
+        drawImage($gameMode, canvas, image, 0);
+      }
+    };
 
     guessProgress.subscribe((n) => {
       drawImage($gameMode, canvas, image, n);
-    });
-
-    gameState.subscribe((s) => {
-      if (s == "win") {
-        canvas.classList.add("success");
-        flashEmoji("🎉");
-      } else if (s == "loss") {
-        canvas.classList.add("failure");
-        flashEmoji("💀");
-      }
     });
 
     gameMode.subscribe(() => {

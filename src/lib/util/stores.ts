@@ -11,3 +11,4 @@ export const gameState = writable("idle");
 export const userEntries = writable(new Array<number>());
 export const enabledFormats = writable([]);
 export const gameMode = writable(null as Gamemode);
+export const isDaily = writable(false);

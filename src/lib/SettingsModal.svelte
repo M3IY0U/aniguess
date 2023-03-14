@@ -2,7 +2,7 @@
   import { createEventDispatcher } from "svelte";
   import { onMount } from "svelte";
   import { Gamemode } from "./util/Enums";
-  import { enabledFormats, gameMode, userEntries } from "./util/stores";
+  import { enabledFormats, gameMode, isDaily, userEntries } from "./util/stores";
   import {
     flashEmoji,
     getMediaListFromAnilist,
@@ -92,6 +92,9 @@
   <div class="modal" role="dialog">
     <button class="close-button" on:click={handleClose}>X</button>
     <h2>Settings</h2>
+    {#if $isDaily}
+      Settings are disabled in Daily mode.
+    {:else}
     <div class="settings-content">
       <section class="gamemode-settings">
         <fieldset class="gamemode-section">
@@ -196,6 +199,7 @@
         >
       </section>
     </div>
+    {/if}
   </div>
 </div>
 

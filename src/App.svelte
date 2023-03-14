@@ -1,24 +1,11 @@
 <script lang="ts">
-  import GuessForm from "./lib/GuessForm.svelte";
-  import {
-    enabledFormats,
-    gameMode,
-    gameState,
-    guessProgress,
-    toGuess,
-  } from "./lib/util/stores";
-  import { Entry } from "./lib/util/Entry";
-  import Hints from "./lib/Hints.svelte";
-  import PastGuesses from "./lib/PastGuesses.svelte";
-  import AnimeCanvas from "./lib/AnimeCanvas.svelte";
-  import { addToGuessesSoFar } from "./lib/util/utilities";
   import AboutModal from "./lib/AboutModal.svelte";
   import SettingsModal from "./lib/SettingsModal.svelte";
-  import { onMount } from "svelte";
-  import Stats from "./lib/Stats.svelte";
   import { inject } from "@vercel/analytics";
-  import { Gamemode } from "./lib/util/Enums";
   import { Route } from "tinro";
+  import InfiniteMode from "./lib/InfiniteMode.svelte";
+  import DailyMode from "./lib/DailyMode.svelte";
+  import { gameMode, isDaily } from "./lib/util/stores";
 
   if (sessionStorage.getItem("analytics") == null) {
     sessionStorage.setItem("analytics", "");
@@ -28,153 +15,43 @@
       // ignored
     }
   }
-  let aboutModal = false;
-  let settingsModal = false;
-
-  enabledFormats.subscribe((arr) => {
-    if (arr.length == 0) return;
-    localStorage.setItem("enabled-formats", JSON.stringify(arr));
-  });
-
+  
   gameMode.subscribe((gm) => {
     if (gm == null) return;
     localStorage.setItem("gamemode", gm);
   });
 
-  onMount(async () => {
-    if (localStorage.getItem("gamemode") == null) {
-      localStorage.setItem("gamemode", Gamemode.Pixelated);
-      gameMode.set(Gamemode.Pixelated);
-    } else {
-      gameMode.set(localStorage.getItem("gamemode") as Gamemode);
-    }
-
-    if (localStorage.getItem("crop-size") == null) {
-      localStorage.setItem("crop-size", "100");
-    }
-
-    if (localStorage.getItem("enabled-formats") == null) {
-      enabledFormats.set(["TV", "MOVIE", "ONA"]);
-      localStorage.setItem("enabled-formats", JSON.stringify($enabledFormats));
-    } else {
-      enabledFormats.set(JSON.parse(localStorage.getItem("enabled-formats")));
-    }
-    await fetch("https://ag-api.timostestdoma.in/entries", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        alreadyGuessed:
-          JSON.parse(sessionStorage.getItem("guesses-so-far")) || [],
-        enabledFormats: $enabledFormats,
-        userEntries: JSON.parse(localStorage.getItem("user-entries")) || [],
-      }),
-    })
-      .then((res) => {
-        if (res.status == 204) {
-          throw new Error(
-            `
-You've run out of stuff to guess. That means: 
-1. Either you're very dedicated and guessed over 1000 things
-2. You've guessed everything the server can give you with the filters
-   you've set. You can toggle them or reset your progress in the settings.
-            `
-          );
-        }
-        return res.json();
-      })
-      .then((data) => {
-        toGuess.set(new Entry(data));
-      })
-      .catch((err) => {
-        alert(err.message);
-      });
-  });
-
-  let guesses = 6;
-
-  guessProgress.subscribe((n) => {
-    guesses = 6 - n;
-    if (guesses == 0) {
-      addToGuessesSoFar(
-        parseInt($toGuess.siteUrl.slice($toGuess.siteUrl.lastIndexOf("/") + 1))
-      );
-    }
-  });
+  let aboutModal = false;
+  let settingsModal = false;
 </script>
 
+{#if aboutModal}
+  <AboutModal on:close={() => (aboutModal = false)} />
+{/if}
+
+{#if settingsModal}
+  <SettingsModal on:close={() => (settingsModal = false)} />
+{/if}
+
+<header class="header">
+  <h1>{$isDaily ? "📅" : "♾️"} AniGuess</h1>
+  <div class="meta-buttons">
+    <button class="button-about" on:click={() => (aboutModal = true)}>
+      <img src="info.svg" width="35" height="35" alt="" />
+    </button>
+    <button class="button-settings" on:click={() => (settingsModal = true)}>
+      <img src="settings.svg" width="35" height="35" alt="" />
+    </button>
+  </div>
+</header>
 <Route path="/">
-  <header class="header">
-    <h1>AniGuess</h1>
-    <div class="meta-buttons">
-      <button class="button-about" on:click={() => (aboutModal = true)}>
-        <img src="info.svg" width="35" height="35" alt="" />
-      </button>
-      <button class="button-settings" on:click={() => (settingsModal = true)}>
-        <img src="settings.svg" width="35" height="35" alt="" />
-      </button>
-    </div>
-  </header>
-
-  {#if aboutModal}
-    <AboutModal on:close={() => (aboutModal = false)} />
-  {/if}
-
-  {#if settingsModal}
-    <SettingsModal on:close={() => (settingsModal = false)} />
-  {/if}
-
-  <main class="main-container">
-    <div
-      id="game-area"
-      style="grid-template-columns: {$gameState == 'idle'
-        ? '1fr'
-        : '1fr 458px 1fr'}"
-    >
-      <PastGuesses />
-      <AnimeCanvas />
-      <Hints />
-    </div>
-    <p id="guess-info">
-      {guesses} Guess{guesses > 1 ? "es" : ""} remaining
-    </p>
-    <GuessForm />
-    <div class="stats-area">
-      <Stats />
-    </div>
-  </main>
+  <InfiniteMode />
 </Route>
-<Route path="/daily">Daily Mode</Route>
+<Route path="/daily">
+  <DailyMode />
+</Route>
 
 <style>
-  .stats-area {
-    position: absolute;
-    bottom: 2em;
-    left: 2em;
-    z-index: 0;
-  }
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #game-area {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 1px;
-    margin: 0;
-    padding: 0;
-  }
-
-  p {
-    margin: 15px 0 0 0;
-    font-size: larger;
-    color: white;
-  }
-
   .header {
     width: 450px;
     display: flex;
