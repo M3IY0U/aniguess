@@ -1,10 +1,12 @@
 <script lang="ts">
-  import type { Guess } from "./util/Guess";
-  import { gameState, pastGuesses } from "./util/stores";
+  import { browser } from "$app/environment";
+  import type { Guess } from "../util/Guess";
+  import { gameState, pastGuesses } from "../util/stores";
 
   let list: Array<Guess> = [];
 
   pastGuesses.subscribe((guesses) => {
+    if (!browser) return;
     list = [];
 
     guesses.forEach((guess) => {

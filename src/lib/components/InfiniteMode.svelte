@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { enabledFormats, gameMode, isDaily, toGuess } from "./util/stores";
-  import { Entry } from "./util/Entry";
+  import { enabledFormats, gameMode, isDaily, toGuess } from "../util/stores";
+  import { Entry } from "../util/Entry";
   import { onMount } from "svelte";
-  import { Gamemode } from "./util/Enums";
+  import { Gamemode } from "../util/Enums";
   import GameplayElements from "./GameplayElements.svelte";
+  import { browser } from "$app/environment";
 
   enabledFormats.subscribe((arr) => {
     if (arr.length == 0) return;
@@ -11,6 +12,7 @@
   });
 
   onMount(async () => {
+    if (!browser) return;
     isDaily.set(false);
 
     if (localStorage.getItem("gamemode") == null) {
@@ -28,19 +30,18 @@
       enabledFormats.set(["TV", "MOVIE", "ONA"]);
       localStorage.setItem("enabled-formats", JSON.stringify($enabledFormats));
     } else {
-      enabledFormats.set(JSON.parse(localStorage.getItem("enabled-formats")));
+      enabledFormats.set(JSON.parse(localStorage.getItem("enabled-formats") || "[]"));
     }
     await fetch("https://ag-api.timostestdoma.in/entries", {
       method: "PUT",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        alreadyGuessed:
-          JSON.parse(sessionStorage.getItem("guesses-so-far")) || [],
+        alreadyGuessed: JSON.parse(sessionStorage.getItem("guesses-so-far") || "[]") || [],
         enabledFormats: $enabledFormats,
-        userEntries: JSON.parse(localStorage.getItem("user-entries")) || [],
-      }),
+        userEntries: JSON.parse(localStorage.getItem("user-entries") || "[]") || []
+      })
     })
       .then((res) => {
         if (res.status == 204) {

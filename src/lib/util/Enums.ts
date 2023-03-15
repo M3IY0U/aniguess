@@ -1,10 +1,10 @@
 export enum GuessType {
   Success = "success",
   Failure = "failure",
-  Skip = "skip",
+  Skip = "skip"
 }
 
 export enum Gamemode {
   Pixelated = "pixelated",
-  Cropped = "cropped",
+  Cropped = "cropped"
 }

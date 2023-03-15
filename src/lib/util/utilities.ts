@@ -10,8 +10,7 @@ export function flashEmoji(emoji: string) {
 }
 
 export function addToGuessesSoFar(id: number) {
-  let guessesSoFar =
-    JSON.parse(sessionStorage.getItem("guesses-so-far")) || new Array<string>();
+  let guessesSoFar = JSON.parse(sessionStorage.getItem("guesses-so-far")) || new Array<string>();
   guessesSoFar.push(id);
   sessionStorage.setItem("guesses-so-far", JSON.stringify(guessesSoFar));
 }

@@ -1,47 +1,44 @@
 <script lang="ts">
-  import { guessProgress, toGuess, gameState, gameMode } from "./util/stores";
+  import { guessProgress, toGuess, gameState, gameMode } from "../util/stores";
   import { onMount } from "svelte";
-  import { drawImage, imgWidth, imgHeight } from "./util/Drawing";
+  import { drawImage, imgWidth, imgHeight } from "../util/Drawing";
+  import { browser } from "$app/environment";
 
   let canvas: HTMLCanvasElement;
-  let image = new Image();
+  let image = browser ? new Image() : null;
 
   toGuess.subscribe((e) => {
     if (e == null) return;
 
-    image.src = e.coverImage;
+    image!.src = e.coverImage;
   });
 
   onMount(() => {
-    image.onload = () => {
+    if (!browser) return;
+    image!.onload = () => {
       if ($gameState == "win" || $gameState == "loss") {
-        drawImage($gameMode, canvas, image, 6);
+        drawImage($gameMode, canvas, image!, 6);
       } else {
-        drawImage($gameMode, canvas, image, 0);
+        drawImage($gameMode, canvas, image!, 0);
       }
     };
 
     guessProgress.subscribe((n) => {
-      drawImage($gameMode, canvas, image, n);
+      drawImage($gameMode, canvas, image!, n);
     });
 
     gameMode.subscribe(() => {
-      canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+      canvas.getContext("2d")!.clearRect(0, 0, canvas.width, canvas.height);
 
       for (let i = 0; i <= $guessProgress; i++) {
-        drawImage($gameMode, canvas, image, i);
+        drawImage($gameMode, canvas, image!, i);
       }
     });
   });
 </script>
 
 <div class="banner-container">
-  <canvas
-    id="anime-image"
-    width={imgWidth}
-    height={imgHeight}
-    bind:this={canvas}
-  />
+  <canvas id="anime-image" width={imgWidth} height={imgHeight} bind:this={canvas} />
   <div id="result-emoji" style="opacity: 0%;" />
 </div>
 

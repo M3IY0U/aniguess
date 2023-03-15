@@ -1,13 +1,13 @@
 <script lang="ts">
-  import AboutModal from "./lib/AboutModal.svelte";
-  import SettingsModal from "./lib/SettingsModal.svelte";
+  import AboutModal from "../lib/components/AboutModal.svelte";
+  import SettingsModal from "../lib/components/SettingsModal.svelte";
   import { inject } from "@vercel/analytics";
-  import { Route } from "tinro";
-  import InfiniteMode from "./lib/InfiniteMode.svelte";
-  import DailyMode from "./lib/DailyMode.svelte";
-  import { gameMode, isDaily } from "./lib/util/stores";
+  import InfiniteMode from "../lib/components/InfiniteMode.svelte";
+  import DailyMode from "../lib/components/DailyMode.svelte";
+  import { gameMode, isDaily } from "../lib/util/stores";
+  import { browser } from "$app/environment";
 
-  if (sessionStorage.getItem("analytics") == null) {
+  if (browser && sessionStorage.getItem("analytics") == null) {
     sessionStorage.setItem("analytics", "");
     try {
       inject();
@@ -15,7 +15,7 @@
       // ignored
     }
   }
-  
+
   gameMode.subscribe((gm) => {
     if (gm == null) return;
     localStorage.setItem("gamemode", gm);
@@ -44,12 +44,7 @@
     </button>
   </div>
 </header>
-<Route path="/">
-  <InfiniteMode />
-</Route>
-<Route path="/daily">
-  <DailyMode />
-</Route>
+<InfiniteMode />
 
 <style>
   .header {

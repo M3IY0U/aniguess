@@ -1,18 +1,13 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import Countdown from "./Countdown.svelte";
-  import { Guess, GuessType } from "./util/Guess";
-  import {
-    gameState,
-    guessProgress,
-    isDaily,
-    pastGuesses,
-    toGuess,
-  } from "./util/stores";
-  import { flashEmoji, setGuessInfoText } from "./util/utilities";
+  import { Guess, GuessType } from "../util/Guess";
+  import { gameState, guessProgress, isDaily, pastGuesses, toGuess } from "../util/stores";
+  import { flashEmoji, setGuessInfoText } from "../util/utilities";
+  import { browser } from "$app/environment";
 
   let guessText = "";
-  let allEntries = [];
+  let allEntries: any[] = [];
 
   function startGame() {
     if ($gameState == "running") return;
@@ -20,26 +15,23 @@
   }
 
   function endGame(result: boolean) {
+    if (!browser) return;
     if (result) {
       gameState.set("win");
-      setGuessInfoText($toGuess.siteUrl);
+      setGuessInfoText($toGuess!.siteUrl);
       flashEmoji("🎉");
     } else {
       gameState.set("loss");
-      setGuessInfoText($toGuess.siteUrl, $toGuess.title.english);
+      setGuessInfoText($toGuess!.siteUrl, $toGuess!.title.english);
       flashEmoji("💀");
     }
 
-    document
-      .querySelector("canvas")
-      .classList.add(result ? "success" : "failure");
+    document.querySelector("canvas")!.classList.add(result ? "success" : "failure");
 
     if ($isDaily) {
       let today = new Date();
       localStorage.setItem(
-        `${today.getUTCDate()}-${
-          today.getUTCMonth() + 1
-        }-${today.getUTCFullYear()}`,
+        `${today.getUTCDate()}-${today.getUTCMonth() + 1}-${today.getUTCFullYear()}`,
         `${result}`
       );
       localStorage.setItem(`daily-guesses`, JSON.stringify($pastGuesses));
@@ -48,13 +40,10 @@
 
   function submitClick() {
     if (
-      guessText.toLowerCase() == $toGuess.title.english.toLowerCase() ||
-      guessText.toLowerCase() == $toGuess.title.romaji.toLowerCase()
+      guessText.toLowerCase() == $toGuess!.title.english.toLowerCase() ||
+      guessText.toLowerCase() == $toGuess!.title.romaji.toLowerCase()
     ) {
-      pastGuesses.update((arr) => [
-        ...arr,
-        new Guess(GuessType.Success, guessText),
-      ]);
+      pastGuesses.update((arr) => [...arr, new Guess(GuessType.Success, guessText)]);
       while ($guessProgress < 6) {
         guessProgress.update((n) => n + 1);
       }
@@ -93,16 +82,14 @@
 
   toGuess.subscribe(async (e) => {
     if (!e) return;
-    if(!$isDaily) return;
+    if (!$isDaily) return;
 
     let today = new Date();
     let alreadyPlayed = localStorage.getItem(
-      `${today.getUTCDate()}-${
-        today.getUTCMonth() + 1
-      }-${today.getUTCFullYear()}`
+      `${today.getUTCDate()}-${today.getUTCMonth() + 1}-${today.getUTCFullYear()}`
     );
     if (alreadyPlayed) {
-      $pastGuesses = JSON.parse(localStorage.getItem("daily-guesses"));
+      $pastGuesses = JSON.parse(localStorage.getItem("daily-guesses")! || "[]");
       endGame(JSON.parse(alreadyPlayed));
 
       for (let i = 0; i < 6; i++) {
@@ -113,28 +100,24 @@
 
   onMount(async () => {
     if (localStorage.getItem("autocomplete-entries") == null) {
-      const response = await fetch(
-        "https://ag-api.timostestdoma.in/autocomplete",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
+      const response = await fetch("https://ag-api.timostestdoma.in/autocomplete", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
         }
-      );
+      });
       const data = await response.json();
       localStorage.setItem("autocomplete-entries", JSON.stringify(data));
       allEntries = data;
     } else {
-      allEntries = JSON.parse(localStorage.getItem("autocomplete-entries"));
+      allEntries = JSON.parse(localStorage.getItem("autocomplete-entries")! || "[]");
     }
   });
 
   function shareResult(): any {
     let text = `__AniGuess Daily ${new Date().toLocaleDateString()}__\n`;
 
-    let maxLength =
-      Math.max(...$pastGuesses.map((guess) => guess.text.length)) - 2;
+    let maxLength = Math.max(...$pastGuesses.map((guess) => guess.text.length)) - 2;
     console.log(maxLength);
 
     $pastGuesses.forEach((guess, i) => {
@@ -194,19 +177,11 @@
       {#if $isDaily}
         <button id="share-button" on:click={() => shareResult()}>Share</button>
       {:else}
-        <button id="retry-button" on:click={() => window.location.reload()}
-          >Retry</button
-        >
+        <button id="retry-button" on:click={() => window.location.reload()}>Retry</button>
       {/if}
     {:else}
-      <button
-        class="submit-button"
-        on:click|once={startGame}
-        on:click={submitClick}>Submit</button
-      >
-      <button class="skip-button" on:click|once={startGame} on:click={skipClick}
-        >Skip ⏩</button
-      >
+      <button class="submit-button" on:click|once={startGame} on:click={submitClick}>Submit</button>
+      <button class="skip-button" on:click|once={startGame} on:click={skipClick}>Skip ⏩</button>
     {/if}
   </div>
 </div>
