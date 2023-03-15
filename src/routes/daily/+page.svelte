@@ -33,7 +33,7 @@
 {/if}
 
 <header class="header">
-  <h1>{$isDaily ? "📅" : "♾️"} AniGuess</h1>
+  <h1><a data-sveltekit-reload href="/" class="header-emoji">📅<div class="hover-bubble">Click to switch to infinite mode</div></a> AniGuess</h1>
   <div class="meta-buttons">
     <button class="button-about" on:click={() => (aboutModal = true)}>
       <img src="info.svg" width="35" height="35" alt="" />
@@ -46,6 +46,24 @@
 <DailyMode />
 
 <style>
+  .header-emoji {
+    cursor: pointer;
+  }
+
+  .header-emoji:hover .hover-bubble {
+    opacity: 1;
+  }
+
+  .hover-bubble {
+    position: fixed;
+    opacity: 0;
+    background-color: #1a1a1a;
+    color: white;
+    transition: opacity 0.5s;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    padding: 3px;
+  }
   .header {
     width: 450px;
     display: flex;
