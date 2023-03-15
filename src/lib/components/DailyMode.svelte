@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { gameMode, isDaily, toGuess } from "./util/stores";
-  import { Entry } from "./util/Entry";
+  import { gameMode, isDaily, toGuess } from "../util/stores";
+  import { Entry } from "../util/Entry";
   import { onMount } from "svelte";
-  import { Gamemode } from "./util/Enums";
+  import { Gamemode } from "../util/Enums";
   import GameplayElements from "./GameplayElements.svelte";
 
   onMount(async () => {
@@ -12,8 +12,8 @@
     await fetch("https://ag-api.timostestdoma.in/daily", {
       method: "GET",
       headers: {
-        "Content-Type": "application/json",
-      },
+        "Content-Type": "application/json"
+      }
     })
       .then((res) => {
         if (!res.ok) {

@@ -1,7 +1,9 @@
 # AniGuess
+
 Source code for guessing website
 
 ### How to run
+
 1. Install Node
 2. Clone repo
 3. Go to cloned folder

@@ -1,3 +1,4 @@
+import { browser } from "$app/environment";
 import { Gamemode } from "./Enums";
 
 export const imgWidth = 450;
@@ -24,25 +25,22 @@ export function drawImage(
   }
 }
 
-export function drawPixelImage(
-  canvas: HTMLCanvasElement,
-  image: HTMLImageElement,
-  scale: number
-) {
+export function drawPixelImage(canvas: HTMLCanvasElement, image: HTMLImageElement, scale: number) {
   scale = [90, 45, 30, 18, 15, 6, 1][scale];
 
   var scaledW = imgWidth / scale;
   var scaledH = imgHeight / scale;
 
   var ctx = canvas.getContext("2d");
-  ctx.imageSmoothingEnabled = false;
+  ctx!.imageSmoothingEnabled = false;
 
-  ctx.drawImage(image, 0, 0, scaledW, scaledH);
-  ctx.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
+  ctx!.drawImage(image, 0, 0, scaledW, scaledH);
+  ctx!.drawImage(canvas, 0, 0, scaledW, scaledH, 0, 0, imgWidth, imgHeight);
 }
 
-const regionSize = parseInt(localStorage.getItem("crop-size")) || 100;
-const pastLocations = [];
+const regionSize = parseInt(browser ? localStorage.getItem("crop-size") || "" : "100") || 100;
+
+const pastLocations: { x1: any; y1: any; x2: any; y2: any }[] = [];
 
 // shoutout https://stackoverflow.com/a/19593950
 function roundedImage(
@@ -77,32 +75,12 @@ export function drawCroppedImage(
   var ctx = canvas.getContext("2d");
 
   if (scale < 6) {
-    ctx.save();
-    roundedImage(ctx, x, y, regionSize, 10);
-    ctx.drawImage(
-      image,
-      x,
-      y,
-      regionSize,
-      regionSize,
-      x,
-      y,
-      regionSize,
-      regionSize
-    );
-    ctx.restore();
+    ctx!.save();
+    roundedImage(ctx!, x, y, regionSize, 10);
+    ctx!.drawImage(image, x, y, regionSize, regionSize, x, y, regionSize, regionSize);
+    ctx!.restore();
   } else {
-    ctx.drawImage(
-      image,
-      0,
-      0,
-      imgWidth,
-      imgHeight,
-      0,
-      0,
-      canvas.width,
-      canvas.height
-    );
+    ctx!.drawImage(image, 0, 0, imgWidth, imgHeight, 0, 0, canvas.width, canvas.height);
   }
 }
 
@@ -112,7 +90,7 @@ function randomPointOnCanvas() {
   return { x, y };
 }
 
-function getNoOverlapPosition() {
+function getNoOverlapPosition(): { x: number; y: number } {
   if (pastLocations.length === 0) {
     return randomPointOnCanvas();
   }

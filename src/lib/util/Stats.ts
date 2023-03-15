@@ -18,7 +18,7 @@ export class Stats {
     this.accuracy = 0;
     this.bestStreak = 0;
     this.currentStreak = 0;
-    
+
     this.totalGuesses = 0;
     this.guessAvg = 0;
   }
@@ -35,15 +35,11 @@ export class Stats {
       this.bestStreak = this.currentStreak;
     }
 
-    this.accuracy = parseFloat(
-      ((this.correctRounds / this.totalRounds) * 100).toFixed(2)
-    );
+    this.accuracy = parseFloat(((this.correctRounds / this.totalRounds) * 100).toFixed(2));
   }
 
   addGuess(): void {
     this.totalGuesses++;
-    this.guessAvg = parseFloat(
-      (this.totalGuesses / (this.totalRounds + 1)).toFixed(2)
-    );
+    this.guessAvg = parseFloat((this.totalGuesses / (this.totalRounds + 1)).toFixed(2));
   }
 }

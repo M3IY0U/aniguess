@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount, tick } from "svelte";
-  import { gameState, guessProgress, toGuess } from "./util/stores";
+  import { gameState, guessProgress, toGuess } from "../util/stores";
 
   onMount(() => {
     guessProgress.subscribe(async (n) => {
@@ -8,19 +8,19 @@
       var hint = document.createElement("li");
       switch (n) {
         case 1:
-          hint.innerText = `💡 Average Score: ${$toGuess.averageScore}%`;
+          hint.innerText = `💡 Average Score: ${$toGuess!.averageScore}%`;
           break;
         case 2:
-          hint.innerText = `💡 Started in: ${$toGuess.startDate}`;
+          hint.innerText = `💡 Started in: ${$toGuess!.startDate}`;
           break;
         case 3:
-          hint.innerText = `💡 Main Studio: ${$toGuess.studios}`;
+          hint.innerText = `💡 Main Studio: ${$toGuess!.studios}`;
           break;
         case 4:
-          hint.innerText = `💡 Genres: ${$toGuess.genres}`;
+          hint.innerText = `💡 Genres: ${$toGuess!.genres}`;
           break;
         case 5:
-          hint.innerText = `💡 Popular Character: ${$toGuess.mainCharacter}`;
+          hint.innerText = `💡 Popular Character: ${$toGuess!.mainCharacter}`;
           break;
         default:
           return;
@@ -34,7 +34,7 @@
           child.classList.remove("hint");
         }
       }
-      document.getElementById("hint-list").appendChild(hint);
+      document.getElementById("hint-list")!.appendChild(hint);
     });
   });
 </script>

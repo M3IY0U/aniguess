@@ -9,9 +9,9 @@ export class Entry {
   mainCharacter: string;
   startDate: string;
 
-  constructor(res: any){
+  constructor(res: any) {
     this.id = res.id;
-    this.title = {romaji: res.title_r, english: res.title_e};
+    this.title = { romaji: res.title_r, english: res.title_e };
     this.coverImage = res.coverImage;
     this.siteUrl = res.siteUrl;
     this.genres = res.genres;
@@ -23,6 +23,6 @@ export class Entry {
 }
 
 export interface Title {
-    romaji: string
-    english: string
-  }
+  romaji: string;
+  english: string;
+}
