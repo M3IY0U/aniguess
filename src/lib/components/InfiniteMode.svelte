@@ -57,7 +57,7 @@ You've run out of stuff to guess. That means:
         return res.json();
       })
       .then((data) => {
-        toGuess.set(new Entry(data));
+        toGuess.set(new Entry(JSON.parse(atob(data.encoded))));
       })
       .catch((err) => {
         alert(err.message);
