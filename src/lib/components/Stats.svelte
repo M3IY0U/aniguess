@@ -12,7 +12,7 @@
   onMount(() => {
     try {
       stats = Object.setPrototypeOf(
-        JSON.parse(sessionStorage.getItem("stats") || "{}"),
+        JSON.parse(sessionStorage.getItem("stats") || "bingle"),
         Stats.prototype
       );
     } catch {
