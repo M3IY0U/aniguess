@@ -5,7 +5,6 @@ export class Guess {
   type: GuessType;
 
   constructor(type: GuessType, text?: string) {
-    this.text = text;
     this.type = type;
 
     switch (type) {

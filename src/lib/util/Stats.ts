@@ -1,13 +1,9 @@
-import { GuessType, type Guess } from "./Guess";
-import { gameState } from "./stores";
-
 export class Stats {
   totalRounds: number;
   correctRounds: number;
   accuracy: number;
   bestStreak: number;
   currentStreak: number;
-  lastResult: boolean;
 
   totalGuesses: number;
   guessAvg: number;
