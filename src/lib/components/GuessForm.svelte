@@ -115,7 +115,7 @@
   });
 
   function shareResult(): any {
-    let text = `__AniGuess Daily ${new Date().toLocaleDateString()}__\n`;
+    let text = `AniGuess Daily ${new Date().toLocaleDateString()}\n`;
 
     let maxLength = Math.max(...$pastGuesses.map((guess) => guess.text.length)) - 2;
     console.log(maxLength);
